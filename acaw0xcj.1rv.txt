@@ -1,0 +1,79 @@
+﻿Merge branch 'Multiple-Players-Obstacles'
+
+Conflicts:
+	ProjectSettings/ProjectSettings.asset
+#
+# It looks like you may be committing a merge.
+# If this is not correct, please remove the file
+#	.git/MERGE_HEAD
+# and try again.
+
+
+# Please enter the commit message for your changes. Lines starting
+# with '#' will be ignored, and an empty message aborts the commit.
+# On branch master
+# Your branch is up-to-date with 'origin/master'.
+#
+# All conflicts fixed but you are still merging.
+#
+# Changes to be committed:
+#	renamed:    Assets/Animations/player-fall.anim -> Assets/Animations/character001-idle.anim
+#	renamed:    Assets/Animations/player-jump.anim.meta -> Assets/Animations/character001-idle.anim.meta
+#	renamed:    Assets/Animations/player-jump.anim -> Assets/Animations/character002-idle.anim
+#	renamed:    Assets/Animations/player-idle.anim.meta -> Assets/Animations/character002-idle.anim.meta
+#	renamed:    Assets/Animations/player-idle.anim -> Assets/Animations/character003-idle.anim
+#	renamed:    Assets/Animations/player-fall.anim.meta -> Assets/Animations/character003-idle.anim.meta
+#	new file:   Assets/Animations/character004-idle.anim
+#	new file:   Assets/Animations/character004-idle.anim.meta
+#	new file:   Assets/Animations/character005-idle.anim
+#	new file:   Assets/Animations/character005-idle.anim.meta
+#	modified:   Assets/Animator/Player.controller
+#	new file:   Assets/Animator/Player2.overrideController
+#	new file:   Assets/Animator/Player2.overrideController.meta
+#	new file:   Assets/Animator/Player3.overrideController
+#	new file:   Assets/Animator/Player3.overrideController.meta
+#	new file:   Assets/Animator/Player4.overrideController
+#	new file:   Assets/Animator/Player4.overrideController.meta
+#	new file:   Assets/Materials.meta
+#	new file:   Assets/Materials/Sprite-selected.mat
+#	new file:   Assets/Materials/Sprite-selected.mat.meta
+#	new file:   Assets/Prefabs/Lanes.prefab
+#	new file:   Assets/Prefabs/Lanes.prefab.meta
+#	new file:   Assets/Prefabs/obstacle.prefab
+#	new file:   Assets/Prefabs/obstacle.prefab.meta
+#	modified:   Assets/Scenes/turbo-adventure.unity
+#	new file:   Assets/Scripts/LaneController.cs
+#	new file:   Assets/Scripts/LaneController.cs.meta
+#	new file:   Assets/Scripts/ObstacleController.cs
+#	new file:   Assets/Scripts/ObstacleController.cs.meta
+#	modified:   Assets/Scripts/PlayerController.cs
+#	new file:   Assets/Sprites/Character_01_portrait.png
+#	new file:   Assets/Sprites/Character_01_portrait.png.meta
+#	new file:   Assets/Sprites/Character_02_portrait.png
+#	new file:   Assets/Sprites/Character_02_portrait.png.meta
+#	new file:   Assets/Sprites/Character_03_portrait.png
+#	new file:   Assets/Sprites/Character_03_portrait.png.meta
+#	new file:   Assets/Sprites/Character_04_portrait.png
+#	new file:   Assets/Sprites/Character_04_portrait.png.meta
+#	new file:   Assets/Sprites/Character_05_Portrait.png
+#	new file:   Assets/Sprites/Character_05_Portrait.png.meta
+#	new file:   Assets/Sprites/modern1.png
+#	new file:   Assets/Sprites/modern1.png.meta
+#	renamed:    Assets/Sprites/character-sheet.png -> Assets/Sprites/modern2.png
+#	renamed:    Assets/Sprites/character-sheet.png.meta -> Assets/Sprites/modern2.png.meta
+#	new file:   Assets/Sprites/modern3.png
+#	new file:   Assets/Sprites/modern3.png.meta
+#	new file:   Assets/Sprites/modern4.png
+#	new file:   Assets/Sprites/modern4.png.meta
+#	new file:   Assets/Sprites/modern5.png
+#	new file:   Assets/Sprites/modern5.png.meta
+#	new file:   Assets/Sprites/modern6.png
+#	new file:   Assets/Sprites/modern6.png.meta
+#	new file:   Assets/Sprites/obstacle.png
+#	new file:   Assets/Sprites/obstacle.png.meta
+#	modified:   ProjectSettings/EditorBuildSettings.asset
+#	modified:   ProjectSettings/InputManager.asset
+#	modified:   ProjectSettings/TagManager.asset
+#	new file:   controltest.apk
+#
+
