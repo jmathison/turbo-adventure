@@ -3,56 +3,94 @@ using System.Collections;
 
 public class PlayerController : MonoBehaviour {
 
+	public int startingLane;
 	public GameObject[] lanes;
+
+	public Material selectedMat;
+
 	int currentLane;
 	bool laneSwitched;
 	bool jumping;
 
-	private Animator a;
+	bool clicked;
+	Vector3 mousePos;
+	Material standard;
+
+	float dragTime;
+
+
+	private Animator animator;
 
 	// Use this for initialization
 	void Start () {
-		currentLane = 0;
-		a = (Animator) this.GetComponent<Animator>();
+
+		standard = this.GetComponent<SpriteRenderer>().material;
+		currentLane = startingLane;
+		animator = (Animator) this.GetComponent<Animator>();
 		snapToLane();
 	}
+
+	void OnMouseDown(){
+		mousePos = Input.mousePosition;
+		clicked = true;
+		dragTime = 0;
+	
+	}
+
 	
 	// Update is called once per frame
 	void Update () {
+
 		if(jumping){
-			if(a.GetCurrentAnimatorStateInfo(0).IsName("player-jump"))
+			if(animator.GetCurrentAnimatorStateInfo(0).IsName("player-jump"))
 				this.transform.Translate(new Vector3(0,.1f,0));
-			else if(a.GetCurrentAnimatorStateInfo(0).IsName("player-fall"))
+			else if(animator.GetCurrentAnimatorStateInfo(0).IsName("player-fall"))
 				this.transform.Translate(new Vector3(0,-.1f,0));
-			else if(a.GetCurrentAnimatorStateInfo(0).IsName("player-idle")){
+			else if(animator.GetCurrentAnimatorStateInfo(0).IsName("player-idle")){
 				jumping = false;
 				snapToLane();
 			}
-
-		}
-		if(Input.GetButtonDown("Up")){
-			currentLane++;
-			if(currentLane >= lanes.Length){
-				currentLane = 0;
+			if(animator.GetCurrentAnimatorStateInfo(0).IsName("player-idle")){
+				jumping = false;
 			}
-			laneSwitched = true;
+		}
+
+		if(clicked){
+			if(Input.GetMouseButton(0)){
+				this.GetComponent<SpriteRenderer>().material = selectedMat;
+				dragTime += Time.deltaTime;
+			}
+			else {
+				clicked = false;
+				this.GetComponent<SpriteRenderer>().material = standard;
+				if(dragTime > 0.05f && Vector3.Distance(mousePos, Input.mousePosition) > 0.05f){
+					// Dragged
+					if( mousePos.y < Input.mousePosition.y){
+						moveUp ();
+					}
+					else{
+						moveDown();
+					}
+				}
+				else if (!jumping){
+					// Normal click
+					jump ();
+				}
+			}
+		}
+
+		if(Input.GetButtonDown("Up")){
+			moveUp();
 		}
 		else if (Input.GetButtonDown("Down")){
-			currentLane--;
-			if(currentLane < 0){
-				currentLane = lanes.Length-1;
-			}
-			laneSwitched = true;
+			moveDown();
 		}
 
-		if(jumping && a.GetCurrentAnimatorStateInfo(0).IsName("player-idle")){
-			jumping = false;
-		}
+
 
 
 		if(!jumping && Input.GetButtonDown("Jump")){
-			a.SetTrigger("playerJump");
-			jumping = true;
+			jump();
 
 		}
 
@@ -65,8 +103,30 @@ public class PlayerController : MonoBehaviour {
 	
 	}
 
+	void jump(){
+		animator.SetTrigger("playerJump");
+		jumping = true;
+	}
+
+
+	void moveUp(){
+		if(currentLane < lanes.Length){
+			currentLane++;
+		}
+		laneSwitched = true;
+	}
+
+	void moveDown(){
+		if(currentLane > 0){
+			currentLane--;
+		}
+		laneSwitched = true;
+	}
+
 	void snapToLane(){
 		Vector3 lanePosition = new Vector3(this.transform.position.x, lanes[currentLane].transform.position.y, this.transform.position.z);
+		this.GetComponent<SpriteRenderer>().sortingLayerID = lanes[currentLane].GetComponent<SpriteRenderer>().sortingLayerID;
+
 		this.transform.position = lanePosition;
 	}
 }
