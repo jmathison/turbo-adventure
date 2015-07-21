@@ -1,0 +1,1111 @@
+fileFormatVersion: 2
+guid: be2244a4e91a9bc4c8d5ef67394573a0
+timeCreated: 1437509429
+licenseType: Free
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: modern6_0
+    21300002: modern6_1
+    21300004: modern6_2
+    21300006: modern6_3
+    21300008: modern6_4
+    21300010: modern6_5
+    21300012: modern6_6
+    21300014: modern6_7
+    21300016: modern6_8
+    21300018: modern6_9
+    21300020: modern6_10
+    21300022: modern6_11
+    21300024: modern6_12
+    21300026: modern6_13
+    21300028: modern6_14
+    21300030: modern6_15
+    21300032: modern6_16
+    21300034: modern6_17
+    21300036: modern6_18
+    21300038: modern6_19
+    21300040: modern6_20
+    21300042: modern6_21
+    21300044: modern6_22
+    21300046: modern6_23
+    21300048: modern6_24
+    21300050: modern6_25
+    21300052: modern6_26
+    21300054: modern6_27
+    21300056: modern6_28
+    21300058: modern6_29
+    21300060: modern6_30
+    21300062: modern6_31
+    21300064: modern6_32
+    21300066: modern6_33
+    21300068: modern6_34
+    21300070: modern6_35
+    21300072: modern6_36
+    21300074: modern6_37
+    21300076: modern6_38
+    21300078: modern6_39
+    21300080: modern6_40
+    21300082: modern6_41
+    21300084: modern6_42
+    21300086: modern6_43
+    21300088: modern6_44
+    21300090: modern6_45
+    21300092: modern6_46
+    21300094: modern6_47
+    21300096: modern6_48
+    21300098: modern6_49
+    21300100: modern6_50
+    21300102: modern6_51
+    21300104: modern6_52
+    21300106: modern6_53
+    21300108: modern6_54
+    21300110: modern6_55
+    21300112: modern6_56
+    21300114: modern6_57
+    21300116: modern6_58
+    21300118: modern6_59
+    21300120: modern6_60
+    21300122: modern6_61
+    21300124: modern6_62
+    21300126: modern6_63
+    21300128: modern6_64
+    21300130: modern6_65
+    21300132: modern6_66
+    21300134: modern6_67
+    21300136: modern6_68
+    21300138: modern6_69
+    21300140: modern6_70
+    21300142: modern6_71
+    21300144: modern6_72
+    21300146: modern6_73
+    21300148: modern6_74
+    21300150: modern6_75
+    21300152: modern6_76
+    21300154: modern6_77
+    21300156: modern6_78
+    21300158: modern6_79
+    21300160: modern6_80
+    21300162: modern6_81
+    21300164: modern6_82
+    21300166: modern6_83
+    21300168: modern6_84
+    21300170: modern6_85
+    21300172: modern6_86
+    21300174: modern6_87
+    21300176: modern6_88
+    21300178: modern6_89
+    21300180: modern6_90
+    21300182: modern6_91
+    21300184: modern6_92
+    21300186: modern6_93
+    21300188: modern6_94
+    21300190: modern6_95
+  serializedVersion: 2
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 1
+    linearTexture: 0
+    correctGamma: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: .25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 0
+  cubemapConvolution: 0
+  cubemapConvolutionSteps: 8
+  cubemapConvolutionExponent: 1.5
+  seamlessCubemap: 0
+  textureFormat: -1
+  maxTextureSize: 2048
+  textureSettings:
+    filterMode: -1
+    aniso: 16
+    mipBias: -1
+    wrapMode: 1
+  nPOTScale: 0
+  lightmap: 0
+  rGBM: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: .5, y: .5}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spritePixelsToUnits: 100
+  alphaIsTransparency: 1
+  textureType: 8
+  buildTargetSettings: []
+  spriteSheet:
+    sprites:
+    - name: modern6_0
+      rect:
+        serializedVersion: 2
+        x: 8
+        y: 448
+        width: 30
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: modern6_1
+      rect:
+        serializedVersion: 2
+        x: 54
+        y: 448
+        width: 30
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: modern6_2
+      rect:
+        serializedVersion: 2
+        x: 100
+        y: 448
+        width: 30
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: modern6_3
+      rect:
+        serializedVersion: 2
+        x: 146
+        y: 448
+        width: 30
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: modern6_4
+      rect:
+        serializedVersion: 2
+        x: 190
+        y: 448
+        width: 34
+        height: 52
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: modern6_5
+      rect:
+        serializedVersion: 2
+        x: 238
+        y: 448
+        width: 30
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: modern6_6
+      rect:
+        serializedVersion: 2
+        x: 282
+        y: 448
+        width: 34
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: modern6_7
+      rect:
+        serializedVersion: 2
+        x: 328
+        y: 448
+        width: 34
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: modern6_8
+      rect:
+        serializedVersion: 2
+        x: 374
+        y: 448
+        width: 34
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: modern6_9
+      rect:
+        serializedVersion: 2
+        x: 422
+        y: 448
+        width: 30
+        height: 52
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: modern6_10
+      rect:
+        serializedVersion: 2
+        x: 468
+        y: 448
+        width: 30
+        height: 54
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: modern6_11
+      rect:
+        serializedVersion: 2
+        x: 514
+        y: 448
+        width: 30
+        height: 52
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: modern6_12
+      rect:
+        serializedVersion: 2
+        x: 12
+        y: 384
+        width: 24
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: modern6_13
+      rect:
+        serializedVersion: 2
+        x: 58
+        y: 384
+        width: 24
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: modern6_14
+      rect:
+        serializedVersion: 2
+        x: 104
+        y: 384
+        width: 24
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: modern6_15
+      rect:
+        serializedVersion: 2
+        x: 150
+        y: 384
+        width: 24
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: modern6_16
+      rect:
+        serializedVersion: 2
+        x: 196
+        y: 384
+        width: 24
+        height: 52
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: modern6_17
+      rect:
+        serializedVersion: 2
+        x: 242
+        y: 384
+        width: 24
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: modern6_18
+      rect:
+        serializedVersion: 2
+        x: 288
+        y: 384
+        width: 26
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: modern6_19
+      rect:
+        serializedVersion: 2
+        x: 334
+        y: 384
+        width: 26
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: modern6_20
+      rect:
+        serializedVersion: 2
+        x: 380
+        y: 384
+        width: 26
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: modern6_21
+      rect:
+        serializedVersion: 2
+        x: 426
+        y: 384
+        width: 30
+        height: 52
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: modern6_22
+      rect:
+        serializedVersion: 2
+        x: 472
+        y: 384
+        width: 30
+        height: 54
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: modern6_23
+      rect:
+        serializedVersion: 2
+        x: 518
+        y: 384
+        width: 30
+        height: 52
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: modern6_24
+      rect:
+        serializedVersion: 2
+        x: 10
+        y: 320
+        width: 24
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: modern6_25
+      rect:
+        serializedVersion: 2
+        x: 56
+        y: 320
+        width: 24
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: modern6_26
+      rect:
+        serializedVersion: 2
+        x: 102
+        y: 320
+        width: 24
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: modern6_27
+      rect:
+        serializedVersion: 2
+        x: 148
+        y: 320
+        width: 24
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: modern6_28
+      rect:
+        serializedVersion: 2
+        x: 194
+        y: 320
+        width: 24
+        height: 52
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: modern6_29
+      rect:
+        serializedVersion: 2
+        x: 240
+        y: 320
+        width: 24
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: modern6_30
+      rect:
+        serializedVersion: 2
+        x: 284
+        y: 320
+        width: 26
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: modern6_31
+      rect:
+        serializedVersion: 2
+        x: 330
+        y: 320
+        width: 26
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: modern6_32
+      rect:
+        serializedVersion: 2
+        x: 376
+        y: 320
+        width: 26
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: modern6_33
+      rect:
+        serializedVersion: 2
+        x: 418
+        y: 320
+        width: 30
+        height: 52
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: modern6_34
+      rect:
+        serializedVersion: 2
+        x: 464
+        y: 320
+        width: 30
+        height: 54
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: modern6_35
+      rect:
+        serializedVersion: 2
+        x: 510
+        y: 320
+        width: 30
+        height: 52
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: modern6_36
+      rect:
+        serializedVersion: 2
+        x: 8
+        y: 256
+        width: 30
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: modern6_37
+      rect:
+        serializedVersion: 2
+        x: 54
+        y: 256
+        width: 30
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: modern6_38
+      rect:
+        serializedVersion: 2
+        x: 100
+        y: 256
+        width: 30
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: modern6_39
+      rect:
+        serializedVersion: 2
+        x: 146
+        y: 256
+        width: 30
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: modern6_40
+      rect:
+        serializedVersion: 2
+        x: 190
+        y: 256
+        width: 34
+        height: 52
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: modern6_41
+      rect:
+        serializedVersion: 2
+        x: 238
+        y: 256
+        width: 30
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: modern6_42
+      rect:
+        serializedVersion: 2
+        x: 282
+        y: 256
+        width: 34
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: modern6_43
+      rect:
+        serializedVersion: 2
+        x: 328
+        y: 256
+        width: 34
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: modern6_44
+      rect:
+        serializedVersion: 2
+        x: 374
+        y: 256
+        width: 34
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: modern6_45
+      rect:
+        serializedVersion: 2
+        x: 422
+        y: 256
+        width: 30
+        height: 52
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: modern6_46
+      rect:
+        serializedVersion: 2
+        x: 468
+        y: 256
+        width: 30
+        height: 54
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: modern6_47
+      rect:
+        serializedVersion: 2
+        x: 514
+        y: 256
+        width: 30
+        height: 52
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: modern6_48
+      rect:
+        serializedVersion: 2
+        x: 8
+        y: 192
+        width: 30
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: modern6_49
+      rect:
+        serializedVersion: 2
+        x: 54
+        y: 192
+        width: 30
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: modern6_50
+      rect:
+        serializedVersion: 2
+        x: 100
+        y: 192
+        width: 30
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: modern6_51
+      rect:
+        serializedVersion: 2
+        x: 146
+        y: 192
+        width: 30
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: modern6_52
+      rect:
+        serializedVersion: 2
+        x: 190
+        y: 192
+        width: 34
+        height: 52
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: modern6_53
+      rect:
+        serializedVersion: 2
+        x: 238
+        y: 192
+        width: 30
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: modern6_54
+      rect:
+        serializedVersion: 2
+        x: 282
+        y: 192
+        width: 34
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: modern6_55
+      rect:
+        serializedVersion: 2
+        x: 328
+        y: 192
+        width: 34
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: modern6_56
+      rect:
+        serializedVersion: 2
+        x: 374
+        y: 192
+        width: 34
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: modern6_57
+      rect:
+        serializedVersion: 2
+        x: 422
+        y: 192
+        width: 30
+        height: 52
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: modern6_58
+      rect:
+        serializedVersion: 2
+        x: 468
+        y: 192
+        width: 30
+        height: 54
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: modern6_59
+      rect:
+        serializedVersion: 2
+        x: 514
+        y: 192
+        width: 30
+        height: 52
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: modern6_60
+      rect:
+        serializedVersion: 2
+        x: 12
+        y: 128
+        width: 24
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: modern6_61
+      rect:
+        serializedVersion: 2
+        x: 58
+        y: 128
+        width: 24
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: modern6_62
+      rect:
+        serializedVersion: 2
+        x: 104
+        y: 128
+        width: 24
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: modern6_63
+      rect:
+        serializedVersion: 2
+        x: 150
+        y: 128
+        width: 24
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: modern6_64
+      rect:
+        serializedVersion: 2
+        x: 196
+        y: 128
+        width: 24
+        height: 52
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: modern6_65
+      rect:
+        serializedVersion: 2
+        x: 242
+        y: 128
+        width: 24
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: modern6_66
+      rect:
+        serializedVersion: 2
+        x: 286
+        y: 128
+        width: 26
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: modern6_67
+      rect:
+        serializedVersion: 2
+        x: 332
+        y: 128
+        width: 26
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: modern6_68
+      rect:
+        serializedVersion: 2
+        x: 378
+        y: 128
+        width: 26
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: modern6_69
+      rect:
+        serializedVersion: 2
+        x: 426
+        y: 128
+        width: 30
+        height: 52
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: modern6_70
+      rect:
+        serializedVersion: 2
+        x: 472
+        y: 128
+        width: 30
+        height: 54
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: modern6_71
+      rect:
+        serializedVersion: 2
+        x: 518
+        y: 128
+        width: 30
+        height: 52
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: modern6_72
+      rect:
+        serializedVersion: 2
+        x: 10
+        y: 64
+        width: 24
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: modern6_73
+      rect:
+        serializedVersion: 2
+        x: 56
+        y: 64
+        width: 24
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: modern6_74
+      rect:
+        serializedVersion: 2
+        x: 102
+        y: 64
+        width: 24
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: modern6_75
+      rect:
+        serializedVersion: 2
+        x: 148
+        y: 64
+        width: 24
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: modern6_76
+      rect:
+        serializedVersion: 2
+        x: 194
+        y: 64
+        width: 24
+        height: 52
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: modern6_77
+      rect:
+        serializedVersion: 2
+        x: 240
+        y: 64
+        width: 24
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: modern6_78
+      rect:
+        serializedVersion: 2
+        x: 286
+        y: 64
+        width: 26
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: modern6_79
+      rect:
+        serializedVersion: 2
+        x: 332
+        y: 64
+        width: 26
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: modern6_80
+      rect:
+        serializedVersion: 2
+        x: 378
+        y: 64
+        width: 26
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: modern6_81
+      rect:
+        serializedVersion: 2
+        x: 418
+        y: 64
+        width: 30
+        height: 52
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: modern6_82
+      rect:
+        serializedVersion: 2
+        x: 464
+        y: 64
+        width: 30
+        height: 54
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: modern6_83
+      rect:
+        serializedVersion: 2
+        x: 510
+        y: 64
+        width: 30
+        height: 52
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: modern6_84
+      rect:
+        serializedVersion: 2
+        x: 8
+        y: 0
+        width: 30
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: modern6_85
+      rect:
+        serializedVersion: 2
+        x: 54
+        y: 0
+        width: 30
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: modern6_86
+      rect:
+        serializedVersion: 2
+        x: 100
+        y: 0
+        width: 30
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: modern6_87
+      rect:
+        serializedVersion: 2
+        x: 146
+        y: 0
+        width: 30
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: modern6_88
+      rect:
+        serializedVersion: 2
+        x: 190
+        y: 0
+        width: 34
+        height: 52
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: modern6_89
+      rect:
+        serializedVersion: 2
+        x: 238
+        y: 0
+        width: 30
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: modern6_90
+      rect:
+        serializedVersion: 2
+        x: 282
+        y: 0
+        width: 34
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: modern6_91
+      rect:
+        serializedVersion: 2
+        x: 328
+        y: 0
+        width: 34
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: modern6_92
+      rect:
+        serializedVersion: 2
+        x: 374
+        y: 0
+        width: 34
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: modern6_93
+      rect:
+        serializedVersion: 2
+        x: 422
+        y: 0
+        width: 30
+        height: 52
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: modern6_94
+      rect:
+        serializedVersion: 2
+        x: 468
+        y: 0
+        width: 30
+        height: 54
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: modern6_95
+      rect:
+        serializedVersion: 2
+        x: 514
+        y: 0
+        width: 30
+        height: 52
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+  spritePackingTag: 
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

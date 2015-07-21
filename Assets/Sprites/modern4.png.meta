@@ -1,0 +1,1111 @@
+fileFormatVersion: 2
+guid: 9a4bee46bf2d1cb45ba0eec0224d2f07
+timeCreated: 1437509407
+licenseType: Free
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: modern4_0
+    21300002: modern4_1
+    21300004: modern4_2
+    21300006: modern4_3
+    21300008: modern4_4
+    21300010: modern4_5
+    21300012: modern4_6
+    21300014: modern4_7
+    21300016: modern4_8
+    21300018: modern4_9
+    21300020: modern4_10
+    21300022: modern4_11
+    21300024: modern4_12
+    21300026: modern4_13
+    21300028: modern4_14
+    21300030: modern4_15
+    21300032: modern4_16
+    21300034: modern4_17
+    21300036: modern4_18
+    21300038: modern4_19
+    21300040: modern4_20
+    21300042: modern4_21
+    21300044: modern4_22
+    21300046: modern4_23
+    21300048: modern4_24
+    21300050: modern4_25
+    21300052: modern4_26
+    21300054: modern4_27
+    21300056: modern4_28
+    21300058: modern4_29
+    21300060: modern4_30
+    21300062: modern4_31
+    21300064: modern4_32
+    21300066: modern4_33
+    21300068: modern4_34
+    21300070: modern4_35
+    21300072: modern4_36
+    21300074: modern4_37
+    21300076: modern4_38
+    21300078: modern4_39
+    21300080: modern4_40
+    21300082: modern4_41
+    21300084: modern4_42
+    21300086: modern4_43
+    21300088: modern4_44
+    21300090: modern4_45
+    21300092: modern4_46
+    21300094: modern4_47
+    21300096: modern4_48
+    21300098: modern4_49
+    21300100: modern4_50
+    21300102: modern4_51
+    21300104: modern4_52
+    21300106: modern4_53
+    21300108: modern4_54
+    21300110: modern4_55
+    21300112: modern4_56
+    21300114: modern4_57
+    21300116: modern4_58
+    21300118: modern4_59
+    21300120: modern4_60
+    21300122: modern4_61
+    21300124: modern4_62
+    21300126: modern4_63
+    21300128: modern4_64
+    21300130: modern4_65
+    21300132: modern4_66
+    21300134: modern4_67
+    21300136: modern4_68
+    21300138: modern4_69
+    21300140: modern4_70
+    21300142: modern4_71
+    21300144: modern4_72
+    21300146: modern4_73
+    21300148: modern4_74
+    21300150: modern4_75
+    21300152: modern4_76
+    21300154: modern4_77
+    21300156: modern4_78
+    21300158: modern4_79
+    21300160: modern4_80
+    21300162: modern4_81
+    21300164: modern4_82
+    21300166: modern4_83
+    21300168: modern4_84
+    21300170: modern4_85
+    21300172: modern4_86
+    21300174: modern4_87
+    21300176: modern4_88
+    21300178: modern4_89
+    21300180: modern4_90
+    21300182: modern4_91
+    21300184: modern4_92
+    21300186: modern4_93
+    21300188: modern4_94
+    21300190: modern4_95
+  serializedVersion: 2
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 1
+    linearTexture: 0
+    correctGamma: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: .25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 0
+  cubemapConvolution: 0
+  cubemapConvolutionSteps: 8
+  cubemapConvolutionExponent: 1.5
+  seamlessCubemap: 0
+  textureFormat: -1
+  maxTextureSize: 2048
+  textureSettings:
+    filterMode: -1
+    aniso: 16
+    mipBias: -1
+    wrapMode: 1
+  nPOTScale: 0
+  lightmap: 0
+  rGBM: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: .5, y: .5}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spritePixelsToUnits: 100
+  alphaIsTransparency: 1
+  textureType: 8
+  buildTargetSettings: []
+  spriteSheet:
+    sprites:
+    - name: modern4_0
+      rect:
+        serializedVersion: 2
+        x: 8
+        y: 448
+        width: 30
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: modern4_1
+      rect:
+        serializedVersion: 2
+        x: 54
+        y: 448
+        width: 30
+        height: 52
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: modern4_2
+      rect:
+        serializedVersion: 2
+        x: 100
+        y: 448
+        width: 30
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: modern4_3
+      rect:
+        serializedVersion: 2
+        x: 144
+        y: 448
+        width: 34
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: modern4_4
+      rect:
+        serializedVersion: 2
+        x: 190
+        y: 448
+        width: 34
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: modern4_5
+      rect:
+        serializedVersion: 2
+        x: 236
+        y: 448
+        width: 34
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: modern4_6
+      rect:
+        serializedVersion: 2
+        x: 284
+        y: 448
+        width: 30
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: modern4_7
+      rect:
+        serializedVersion: 2
+        x: 330
+        y: 448
+        width: 30
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: modern4_8
+      rect:
+        serializedVersion: 2
+        x: 376
+        y: 448
+        width: 30
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: modern4_9
+      rect:
+        serializedVersion: 2
+        x: 418
+        y: 448
+        width: 38
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: modern4_10
+      rect:
+        serializedVersion: 2
+        x: 464
+        y: 448
+        width: 38
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: modern4_11
+      rect:
+        serializedVersion: 2
+        x: 510
+        y: 448
+        width: 38
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: modern4_12
+      rect:
+        serializedVersion: 2
+        x: 12
+        y: 384
+        width: 28
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: modern4_13
+      rect:
+        serializedVersion: 2
+        x: 58
+        y: 384
+        width: 28
+        height: 52
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: modern4_14
+      rect:
+        serializedVersion: 2
+        x: 104
+        y: 384
+        width: 28
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: modern4_15
+      rect:
+        serializedVersion: 2
+        x: 148
+        y: 384
+        width: 30
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: modern4_16
+      rect:
+        serializedVersion: 2
+        x: 194
+        y: 384
+        width: 30
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: modern4_17
+      rect:
+        serializedVersion: 2
+        x: 240
+        y: 384
+        width: 30
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: modern4_18
+      rect:
+        serializedVersion: 2
+        x: 284
+        y: 384
+        width: 28
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: modern4_19
+      rect:
+        serializedVersion: 2
+        x: 330
+        y: 384
+        width: 28
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: modern4_20
+      rect:
+        serializedVersion: 2
+        x: 376
+        y: 384
+        width: 28
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: modern4_21
+      rect:
+        serializedVersion: 2
+        x: 426
+        y: 384
+        width: 26
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: modern4_22
+      rect:
+        serializedVersion: 2
+        x: 472
+        y: 384
+        width: 26
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: modern4_23
+      rect:
+        serializedVersion: 2
+        x: 518
+        y: 384
+        width: 26
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: modern4_24
+      rect:
+        serializedVersion: 2
+        x: 6
+        y: 320
+        width: 28
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: modern4_25
+      rect:
+        serializedVersion: 2
+        x: 52
+        y: 320
+        width: 28
+        height: 52
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: modern4_26
+      rect:
+        serializedVersion: 2
+        x: 98
+        y: 320
+        width: 28
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: modern4_27
+      rect:
+        serializedVersion: 2
+        x: 144
+        y: 320
+        width: 30
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: modern4_28
+      rect:
+        serializedVersion: 2
+        x: 190
+        y: 320
+        width: 30
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: modern4_29
+      rect:
+        serializedVersion: 2
+        x: 236
+        y: 320
+        width: 30
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: modern4_30
+      rect:
+        serializedVersion: 2
+        x: 286
+        y: 320
+        width: 28
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: modern4_31
+      rect:
+        serializedVersion: 2
+        x: 332
+        y: 320
+        width: 28
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: modern4_32
+      rect:
+        serializedVersion: 2
+        x: 378
+        y: 320
+        width: 28
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: modern4_33
+      rect:
+        serializedVersion: 2
+        x: 422
+        y: 320
+        width: 26
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: modern4_34
+      rect:
+        serializedVersion: 2
+        x: 468
+        y: 320
+        width: 26
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: modern4_35
+      rect:
+        serializedVersion: 2
+        x: 514
+        y: 320
+        width: 26
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: modern4_36
+      rect:
+        serializedVersion: 2
+        x: 8
+        y: 256
+        width: 30
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: modern4_37
+      rect:
+        serializedVersion: 2
+        x: 54
+        y: 256
+        width: 30
+        height: 52
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: modern4_38
+      rect:
+        serializedVersion: 2
+        x: 100
+        y: 256
+        width: 30
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: modern4_39
+      rect:
+        serializedVersion: 2
+        x: 144
+        y: 256
+        width: 34
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: modern4_40
+      rect:
+        serializedVersion: 2
+        x: 190
+        y: 256
+        width: 34
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: modern4_41
+      rect:
+        serializedVersion: 2
+        x: 236
+        y: 256
+        width: 34
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: modern4_42
+      rect:
+        serializedVersion: 2
+        x: 284
+        y: 256
+        width: 30
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: modern4_43
+      rect:
+        serializedVersion: 2
+        x: 330
+        y: 256
+        width: 30
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: modern4_44
+      rect:
+        serializedVersion: 2
+        x: 376
+        y: 256
+        width: 30
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: modern4_45
+      rect:
+        serializedVersion: 2
+        x: 418
+        y: 256
+        width: 38
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: modern4_46
+      rect:
+        serializedVersion: 2
+        x: 464
+        y: 256
+        width: 38
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: modern4_47
+      rect:
+        serializedVersion: 2
+        x: 510
+        y: 256
+        width: 38
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: modern4_48
+      rect:
+        serializedVersion: 2
+        x: 8
+        y: 192
+        width: 30
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: modern4_49
+      rect:
+        serializedVersion: 2
+        x: 54
+        y: 192
+        width: 30
+        height: 52
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: modern4_50
+      rect:
+        serializedVersion: 2
+        x: 100
+        y: 192
+        width: 30
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: modern4_51
+      rect:
+        serializedVersion: 2
+        x: 142
+        y: 192
+        width: 38
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: modern4_52
+      rect:
+        serializedVersion: 2
+        x: 188
+        y: 192
+        width: 38
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: modern4_53
+      rect:
+        serializedVersion: 2
+        x: 234
+        y: 192
+        width: 38
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: modern4_54
+      rect:
+        serializedVersion: 2
+        x: 280
+        y: 192
+        width: 38
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: modern4_55
+      rect:
+        serializedVersion: 2
+        x: 326
+        y: 192
+        width: 38
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: modern4_56
+      rect:
+        serializedVersion: 2
+        x: 372
+        y: 192
+        width: 38
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: modern4_57
+      rect:
+        serializedVersion: 2
+        x: 416
+        y: 192
+        width: 42
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: modern4_58
+      rect:
+        serializedVersion: 2
+        x: 462
+        y: 192
+        width: 42
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: modern4_59
+      rect:
+        serializedVersion: 2
+        x: 508
+        y: 192
+        width: 42
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: modern4_60
+      rect:
+        serializedVersion: 2
+        x: 12
+        y: 128
+        width: 28
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: modern4_61
+      rect:
+        serializedVersion: 2
+        x: 58
+        y: 128
+        width: 28
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: modern4_62
+      rect:
+        serializedVersion: 2
+        x: 104
+        y: 128
+        width: 28
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: modern4_63
+      rect:
+        serializedVersion: 2
+        x: 152
+        y: 128
+        width: 26
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: modern4_64
+      rect:
+        serializedVersion: 2
+        x: 198
+        y: 128
+        width: 26
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: modern4_65
+      rect:
+        serializedVersion: 2
+        x: 244
+        y: 128
+        width: 26
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: modern4_66
+      rect:
+        serializedVersion: 2
+        x: 286
+        y: 128
+        width: 32
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: modern4_67
+      rect:
+        serializedVersion: 2
+        x: 332
+        y: 128
+        width: 32
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: modern4_68
+      rect:
+        serializedVersion: 2
+        x: 378
+        y: 128
+        width: 32
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: modern4_69
+      rect:
+        serializedVersion: 2
+        x: 424
+        y: 128
+        width: 32
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: modern4_70
+      rect:
+        serializedVersion: 2
+        x: 470
+        y: 128
+        width: 32
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: modern4_71
+      rect:
+        serializedVersion: 2
+        x: 516
+        y: 128
+        width: 32
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: modern4_72
+      rect:
+        serializedVersion: 2
+        x: 6
+        y: 64
+        width: 28
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: modern4_73
+      rect:
+        serializedVersion: 2
+        x: 52
+        y: 64
+        width: 28
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: modern4_74
+      rect:
+        serializedVersion: 2
+        x: 98
+        y: 64
+        width: 28
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: modern4_75
+      rect:
+        serializedVersion: 2
+        x: 144
+        y: 64
+        width: 26
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: modern4_76
+      rect:
+        serializedVersion: 2
+        x: 190
+        y: 64
+        width: 26
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: modern4_77
+      rect:
+        serializedVersion: 2
+        x: 236
+        y: 64
+        width: 26
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: modern4_78
+      rect:
+        serializedVersion: 2
+        x: 280
+        y: 64
+        width: 32
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: modern4_79
+      rect:
+        serializedVersion: 2
+        x: 326
+        y: 64
+        width: 32
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: modern4_80
+      rect:
+        serializedVersion: 2
+        x: 372
+        y: 64
+        width: 32
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: modern4_81
+      rect:
+        serializedVersion: 2
+        x: 418
+        y: 64
+        width: 32
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: modern4_82
+      rect:
+        serializedVersion: 2
+        x: 464
+        y: 64
+        width: 32
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: modern4_83
+      rect:
+        serializedVersion: 2
+        x: 510
+        y: 64
+        width: 32
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: modern4_84
+      rect:
+        serializedVersion: 2
+        x: 8
+        y: 0
+        width: 30
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: modern4_85
+      rect:
+        serializedVersion: 2
+        x: 54
+        y: 0
+        width: 30
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: modern4_86
+      rect:
+        serializedVersion: 2
+        x: 100
+        y: 0
+        width: 30
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: modern4_87
+      rect:
+        serializedVersion: 2
+        x: 142
+        y: 0
+        width: 38
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: modern4_88
+      rect:
+        serializedVersion: 2
+        x: 188
+        y: 0
+        width: 38
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: modern4_89
+      rect:
+        serializedVersion: 2
+        x: 234
+        y: 0
+        width: 38
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: modern4_90
+      rect:
+        serializedVersion: 2
+        x: 280
+        y: 0
+        width: 38
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: modern4_91
+      rect:
+        serializedVersion: 2
+        x: 326
+        y: 0
+        width: 38
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: modern4_92
+      rect:
+        serializedVersion: 2
+        x: 372
+        y: 0
+        width: 38
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: modern4_93
+      rect:
+        serializedVersion: 2
+        x: 420
+        y: 0
+        width: 34
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: modern4_94
+      rect:
+        serializedVersion: 2
+        x: 466
+        y: 0
+        width: 34
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: modern4_95
+      rect:
+        serializedVersion: 2
+        x: 512
+        y: 0
+        width: 34
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+  spritePackingTag: 
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
