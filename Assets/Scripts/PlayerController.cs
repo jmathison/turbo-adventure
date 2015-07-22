@@ -7,6 +7,10 @@ public class PlayerController : MonoBehaviour {
 	public GameObject[] lanes;
 
 	public Material selectedMat;
+	public Material hurtMat;
+
+	bool hurt;
+	float hurtTime;
 
 	int currentLane;
 	bool laneSwitched;
@@ -37,15 +41,27 @@ public class PlayerController : MonoBehaviour {
 	
 	}
 
+	public void setHurt(){
+		hurt = true;
+		this.GetComponent<SpriteRenderer>().material = hurtMat;
+	}
 	
 	// Update is called once per frame
 	void Update () {
 
+		if(hurt){
+			hurtTime += Time.deltaTime;
+			if(hurtTime > 0.3f){
+				this.GetComponent<SpriteRenderer>().material = standard;
+				hurt = false;
+			}
+		}
+
 		if(jumping){
 			if(animator.GetCurrentAnimatorStateInfo(0).IsName("player-jump"))
-				this.transform.Translate(new Vector3(0,.1f,0));
+				this.transform.Translate(new Vector3(0,.2f,0));
 			else if(animator.GetCurrentAnimatorStateInfo(0).IsName("player-fall"))
-				this.transform.Translate(new Vector3(0,-.1f,0));
+				this.transform.Translate(new Vector3(0,-.2f,0));
 			else if(animator.GetCurrentAnimatorStateInfo(0).IsName("player-idle")){
 				jumping = false;
 				snapToLane();
@@ -79,21 +95,6 @@ public class PlayerController : MonoBehaviour {
 			}
 		}
 
-		if(Input.GetButtonDown("Up")){
-			moveUp();
-		}
-		else if (Input.GetButtonDown("Down")){
-			moveDown();
-		}
-
-
-
-
-		if(!jumping && Input.GetButtonDown("Jump")){
-			jump();
-
-		}
-
 		if(laneSwitched){
 			snapToLane();
 			laneSwitched = false;
@@ -123,10 +124,14 @@ public class PlayerController : MonoBehaviour {
 		laneSwitched = true;
 	}
 
+	public bool isJumping(){
+		return jumping;
+	}
+
 	void snapToLane(){
 		Vector3 lanePosition = new Vector3(this.transform.position.x, lanes[currentLane].transform.position.y, this.transform.position.z);
 		this.GetComponent<SpriteRenderer>().sortingLayerID = lanes[currentLane].GetComponent<SpriteRenderer>().sortingLayerID;
-
+		this.gameObject.layer = lanes[currentLane].layer;
 		this.transform.position = lanePosition;
 	}
 }
