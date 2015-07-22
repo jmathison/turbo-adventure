@@ -18,13 +18,13 @@ public class ObstacleController : MonoBehaviour {
 		}
 	}
 	
-	void OnCollisionEnter2D(Collision2D coll) {
-		Debug.Log("yes");
+	void OnTriggerEnter2D(Collider2D coll) {
 		if(coll.gameObject.tag == "Player"){
-			Debug.Log("and this");
 			PlayerController playerController = coll.gameObject.GetComponent<PlayerController>();
 			if(playerController != null && !playerController.isJumping()){
-				coll.gameObject.transform.Translate(new Vector3(-.1f, 0, 0));
+				// Knockback and set hurt
+				coll.gameObject.transform.Translate(new Vector3(-.5f, 0, 0));
+				playerController.setHurt();
 			}
 			GameObject.Destroy(this.gameObject);
 		}

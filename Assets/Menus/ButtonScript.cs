@@ -10,7 +10,8 @@ public class ButtonScript : MonoBehaviour {
 
 	public void LoadLevel()
 	{
-		Application.LoadLevel ("Level1");
+		print("I tried");
+		Application.LoadLevel ("turbo-adventure");
 	}
 
 	public void LoadOptions()
