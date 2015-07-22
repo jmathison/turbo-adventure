@@ -19,8 +19,8 @@ public class ks_tempScrolling : MonoBehaviour
 	// Update is called once per frame
 	void Update () 
 	{
-		transform.Translate(new Vector3(-1 * 5 * Time.deltaTime, 0, 0));
-		moveToPos = new Vector3(width + otherObject.transform.position.x - .3f, 0, 0);
+		transform.Translate(new Vector3(-1 * 3 * Time.deltaTime, 0, 0));
+		moveToPos = new Vector3(width + otherObject.transform.position.x - .3f, this.transform.position.y, 0);
 
 		if(this.transform.position.x <= -6)
 		{

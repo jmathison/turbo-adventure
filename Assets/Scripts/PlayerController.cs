@@ -108,10 +108,14 @@ public class PlayerController : MonoBehaviour {
 		laneSwitched = true;
 	}
 
+	public bool isJumping(){
+		return jumping;
+	}
+
 	void snapToLane(){
 		Vector3 lanePosition = new Vector3(this.transform.position.x, lanes[currentLane].transform.position.y, this.transform.position.z);
 		this.GetComponent<SpriteRenderer>().sortingLayerID = lanes[currentLane].GetComponent<SpriteRenderer>().sortingLayerID;
-
+		this.gameObject.layer = lanes[currentLane].layer;
 		this.transform.position = lanePosition;
 	}
 }
