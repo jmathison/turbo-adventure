@@ -10,7 +10,7 @@ public class LaneController : MonoBehaviour {
 
 	// Use this for initialization
 	void Start () {
-	
+
 	}
 	
 	// Update is called once per frame
@@ -18,9 +18,10 @@ public class LaneController : MonoBehaviour {
 		secondsSinceSpawn += Time.deltaTime;
 
 		if(secondsSinceSpawn > secondsToSpawn){
-			GameObject.Instantiate(obstaclePrefab);
-			obstaclePrefab.GetComponent<ObstacleController>().currentLane = this.gameObject;
+			GameObject newObstacle = GameObject.Instantiate(obstaclePrefab);
+			newObstacle.GetComponent<ObstacleController>().currentLane = this.gameObject;
 			secondsSinceSpawn = 0;
+			secondsToSpawn = Random.Range(3,6);
 		}
 	
 	}

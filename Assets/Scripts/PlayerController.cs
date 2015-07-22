@@ -79,21 +79,6 @@ public class PlayerController : MonoBehaviour {
 			}
 		}
 
-		if(Input.GetButtonDown("Up")){
-			moveUp();
-		}
-		else if (Input.GetButtonDown("Down")){
-			moveDown();
-		}
-
-
-
-
-		if(!jumping && Input.GetButtonDown("Jump")){
-			jump();
-
-		}
-
 		if(laneSwitched){
 			snapToLane();
 			laneSwitched = false;
