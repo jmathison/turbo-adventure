@@ -43,6 +43,9 @@ public class PlayerController : MonoBehaviour {
 
 	public void setHurt(){
 		hurt = true;
+		CameraShakeController camShake = Camera.main.GetComponent<CameraShakeController>();
+		if(camShake != null)
+			camShake.StartCamShake();
 		this.GetComponent<SpriteRenderer>().material = hurtMat;
 	}
 	
@@ -54,6 +57,7 @@ public class PlayerController : MonoBehaviour {
 			if(hurtTime > 0.3f){
 				this.GetComponent<SpriteRenderer>().material = standard;
 				hurt = false;
+				hurtTime = 0;
 			}
 		}
 
@@ -111,7 +115,7 @@ public class PlayerController : MonoBehaviour {
 
 
 	void moveUp(){
-		if(currentLane < lanes.Length){
+		if(currentLane < lanes.Length - 1){
 			currentLane++;
 		}
 		laneSwitched = true;
