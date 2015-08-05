@@ -21,7 +21,7 @@ public class LaneController : MonoBehaviour {
 			GameObject newObstacle = GameObject.Instantiate(obstaclePrefab);
 			newObstacle.GetComponent<ObstacleController>().currentLane = this.gameObject;
 			secondsSinceSpawn = 0;
-			secondsToSpawn = Random.Range(3,6);
+			secondsToSpawn = Random.Range(1,2);
 		}
 	
 	}
