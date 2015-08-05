@@ -1,7 +1,13 @@
 fileFormatVersion: 2
+<<<<<<< HEAD:Assets/Jeff.meta
 guid: bc47757d5519cee4f838745b0747289d
 folderAsset: yes
 timeCreated: 1438740478
+=======
+guid: eb6fa9ff5f802e646ab8d1e9efbcc0a8
+folderAsset: yes
+timeCreated: 1438739918
+>>>>>>> origin/master:Assets/Sounds.meta
 licenseType: Free
 DefaultImporter:
   userData: 
