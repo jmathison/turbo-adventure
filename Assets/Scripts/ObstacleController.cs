@@ -13,7 +13,8 @@ public class ObstacleController : MonoBehaviour {
 	// Update is called once per frame
 	void Update () {
 		this.transform.Translate(new Vector3(-1 * 3 * Time.deltaTime,0,0));
-		if(this.transform.position.x < Camera.main.ViewportToScreenPoint(new Vector3(0,0,0)).x ){
+		float dist = Camera.main.transform.position.z - this.transform.position.z;
+		if(this.transform.position.x < Camera.main.ScreenToWorldPoint(new Vector3(0,0,dist)).x ){
 			GameObject.Destroy(this.gameObject);
 		}
 	}
@@ -23,10 +24,12 @@ public class ObstacleController : MonoBehaviour {
 			PlayerController playerController = coll.gameObject.GetComponent<PlayerController>();
 			if(playerController != null && !playerController.isJumping()){
 				// Knockback and set hurt
+				this.GetComponent<AudioSource>().Play();
 				coll.gameObject.transform.Translate(new Vector3(-.5f, 0, 0));
 				playerController.setHurt();
 			}
-			GameObject.Destroy(this.gameObject);
+			this.GetComponent<SpriteRenderer>().enabled = false;
+			this.GetComponent<BoxCollider2D>().enabled = false;
 		}
 	}
 

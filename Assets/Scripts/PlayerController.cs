@@ -76,6 +76,7 @@ public class PlayerController : MonoBehaviour {
 		}
 
 		if(clicked){
+
 			if(Input.GetMouseButton(0)){
 				this.GetComponent<SpriteRenderer>().material = selectedMat;
 				dragTime += Time.deltaTime;
@@ -83,7 +84,8 @@ public class PlayerController : MonoBehaviour {
 			else {
 				clicked = false;
 				this.GetComponent<SpriteRenderer>().material = standard;
-				if(dragTime > 0.05f && Vector3.Distance(mousePos, Input.mousePosition) > 0.05f){
+				float dragDistance = Vector3.Distance(mousePos, Input.mousePosition);
+				if(dragTime > 0.05f && dragDistance > 0.1f){
 					// Dragged
 					if( mousePos.y < Input.mousePosition.y){
 						moveUp ();
@@ -101,6 +103,7 @@ public class PlayerController : MonoBehaviour {
 
 		if(laneSwitched){
 			snapToLane();
+			this.GetComponent<AudioSource>().Play();
 			laneSwitched = false;
 		}
 
