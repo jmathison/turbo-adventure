@@ -1,7 +1,7 @@
 ﻿using UnityEngine;
 using System.Collections;
 
-public class ObstacleController : MonoBehaviour {
+public class ks_SmallObstacleController1 : MonoBehaviour {
 
 	[HideInInspector] public GameObject currentLane;
 
@@ -25,12 +25,12 @@ public class ObstacleController : MonoBehaviour {
 			if(playerController != null && !playerController.isJumping()){
 				// Knockback and set hurt
 				this.GetComponent<AudioSource>().Play();
-				coll.gameObject.transform.Translate(new Vector3(-.5f, 0, 0));
+				coll.gameObject.transform.Translate(new Vector3(-.25f, 0, 0));
 				//Hacked out of the player by Kevin 05/04
 				CameraShakeController camShake = Camera.main.GetComponent<CameraShakeController> ();
 				//Pass in obstacle type for camshake amount.
 				if (camShake != null)
-					camShake.StartCamShake(.5f);
+					camShake.StartCamShake(.2f);
 				playerController.setHurt();
 			}
 			this.GetComponent<SpriteRenderer>().enabled = false;
@@ -45,7 +45,7 @@ public class ObstacleController : MonoBehaviour {
 	}
 
 	void snapToLane(){
-		Vector3 lanePosition = new Vector3(this.transform.position.x, currentLane.transform.position.y, this.transform.position.z);
+		Vector3 lanePosition = new Vector3(this.transform.position.x, currentLane.transform.position.y - .5f, this.transform.position.z);
 		this.GetComponent<SpriteRenderer>().sortingLayerID = currentLane.GetComponent<SpriteRenderer>().sortingLayerID;
 		this.gameObject.layer = currentLane.layer;
 		this.transform.position = lanePosition;

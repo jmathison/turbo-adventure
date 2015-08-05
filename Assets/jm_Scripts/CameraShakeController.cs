@@ -4,21 +4,27 @@ using System.Collections;
 public class CameraShakeController : MonoBehaviour {
 
 	[HideInInspector] public bool shaking = false;
-	public float magnitude = 0.5f;
+	[HideInInspector] public float magnitude = 0.5f;
 	public float shakeTime = 0.1f;
 
 	void Start(){
 
 	}
 
-	void Update(){
-
+	void Update()
+	{
+		if(!shaking){
+			magnitude = 0;
+		}
 	}
 
-	public void StartCamShake(){
+	public void StartCamShake(float mag){
 		if (!shaking){
 			shaking = true;
+			magnitude = mag;
 			StartCoroutine("CameraShake");
+		} else{
+			magnitude += mag;
 		}
 	}
 	

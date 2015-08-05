@@ -13,6 +13,10 @@ public class PlayerController : MonoBehaviour
 	public Material hurtMat;
 	public Material deadMat;
 
+	//Kevin added 08/04
+	public GameObject gameController;
+	private GameController controllerScript;
+
 	public AudioClip bump;
 
 	bool hurt;
@@ -32,6 +36,11 @@ public class PlayerController : MonoBehaviour
 	// Use this for initialization
 	void Start ()
 	{
+		//Kevin added 08/04
+		controllerScript = gameController.GetComponent<GameController>();
+		//Make it start not alive.
+		Vector3 initPos = new Vector3(100, 10, 0);
+		this.transform.position = initPos;
 
 		standard = this.GetComponent<SpriteRenderer> ().material;
 		currentLane = startingLane;
@@ -40,6 +49,7 @@ public class PlayerController : MonoBehaviour
 
 		setupSprite ();
 		snapToLane ();
+		setMaterials(deadMat);
 	}
 
 	void OnMouseDown ()
@@ -53,13 +63,16 @@ public class PlayerController : MonoBehaviour
 	public void setHurt ()
 	{
 		hurt = true;
-		CameraShakeController camShake = Camera.main.GetComponent<CameraShakeController> ();
-		if (camShake != null)
-			camShake.StartCamShake ();
+//		CameraShakeController camShake = Camera.main.GetComponent<CameraShakeController> ();
+//		//Pass in obstacle type for camshake amount.
+//		if (camShake != null)
+//			camShake.StartCamShake();
 		Vector3 checkPosition = Camera.main.WorldToViewportPoint (this.transform.position);
-		if (checkPosition.x < -.1) {
+		if (checkPosition.x < .01) {
 			this.alive = false;
+			this.transform.position = new Vector3(100, 0, 0);
 			setMaterials (deadMat);
+			controllerScript.PlayerDied();
 		}
 		else{
 			setMaterials(hurtMat);
@@ -176,5 +189,13 @@ public class PlayerController : MonoBehaviour
 	{
 		portraitSprite.sprite = characterPortrait;
 	}
-	
+
+	//Kevin Added 08/04
+	public void SpawnPlayer()
+	{
+		snapToLane();
+		//Should not be hard coded.
+		this.transform.position = new Vector3(2.5f, this.transform.position.y, this.transform.position.z);
+		setMaterials(standard);
+	}
 }
