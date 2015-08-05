@@ -9,6 +9,7 @@ public class PlayerController : MonoBehaviour
 	public GameObject[] lanes;
 	public GameObject portraitObject;
 	public Sprite characterPortrait;
+	public Sprite mysteryPortrait;
 	public Material selectedMat;
 	public Material hurtMat;
 	public Material deadMat;
@@ -16,6 +17,9 @@ public class PlayerController : MonoBehaviour
 	//Kevin added 08/04
 	public GameObject gameController;
 	private GameController controllerScript;
+
+	public GameObject scoreText;
+	private ks_code_score scoreScript;
 
 	public AudioClip bump;
 
@@ -38,6 +42,7 @@ public class PlayerController : MonoBehaviour
 	{
 		//Kevin added 08/04
 		controllerScript = gameController.GetComponent<GameController>();
+		scoreScript = scoreText.GetComponent<ks_code_score>();
 		//Make it start not alive.
 		Vector3 initPos = new Vector3(100, 10, 0);
 		this.transform.position = initPos;
@@ -49,7 +54,7 @@ public class PlayerController : MonoBehaviour
 
 		setupSprite ();
 		snapToLane ();
-		setMaterials(deadMat);
+//		setMaterials(deadMat);
 	}
 
 	void OnMouseDown ()
@@ -72,6 +77,9 @@ public class PlayerController : MonoBehaviour
 			this.alive = false;
 			this.transform.position = new Vector3(100, 0, 0);
 			setMaterials (deadMat);
+			//ks_code_score function
+			scoreScript.PlayerDeath();
+			//GameController function
 			controllerScript.PlayerDied();
 		}
 		else{
@@ -187,7 +195,7 @@ public class PlayerController : MonoBehaviour
 
 	void setupSprite ()
 	{
-		portraitSprite.sprite = characterPortrait;
+		portraitSprite.sprite = mysteryPortrait;
 	}
 
 	//Kevin Added 08/04
@@ -196,6 +204,9 @@ public class PlayerController : MonoBehaviour
 		snapToLane();
 		//Should not be hard coded.
 		this.transform.position = new Vector3(2.5f, this.transform.position.y, this.transform.position.z);
+		portraitSprite.sprite = characterPortrait;
+		//ks_code_score function
+		scoreScript.PlayerCreated();
 		setMaterials(standard);
 	}
 }

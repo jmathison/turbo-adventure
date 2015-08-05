@@ -46,7 +46,7 @@ public class ks_code_score : MonoBehaviour
 		}
 	}
 	
-	public void PlayerCreated(GameObject createdObj)
+	public void PlayerCreated()
 	{
 		multiplier += 5;
 	}
