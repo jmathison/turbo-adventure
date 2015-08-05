@@ -104,8 +104,13 @@ public class PlayerController : MonoBehaviour {
 			laneSwitched = false;
 		}
 
-
-	
+		/* If player goes off of the screen */
+		if(this.transform.position.x < Camera.main.ViewportToScreenPoint(new Vector3(0,0,0)).x ){
+			Destroy(this.gameObject);
+			Application.LoadLevel("GameOverMenu");
+			//Application.LoadLevel("PauseMenu");
+			Debug.Log ("piss");
+		}
 	}
 
 	void jump(){
