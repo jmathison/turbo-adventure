@@ -5,7 +5,7 @@ public class LaneController : MonoBehaviour {
 
 	public GameObject obstaclePrefab;
 
-	float secondsToSpawn = 3;
+	float secondsToSpawn = 1;
 	float secondsSinceSpawn = 0;
 
 	// Use this for initialization

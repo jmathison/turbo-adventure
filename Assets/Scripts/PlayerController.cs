@@ -108,11 +108,10 @@ public class PlayerController : MonoBehaviour {
 		}
 
 		/* If player goes off of the screen */
-		if(this.transform.position.x < Camera.main.ViewportToScreenPoint(new Vector3(0,0,0)).x ){
+		Vector3 checkPosition = Camera.main.WorldToViewportPoint (this.transform.position);
+		if(checkPosition.x < 0){
 			Destroy(this.gameObject);
 			Application.LoadLevel("GameOverMenu");
-			//Application.LoadLevel("PauseMenu");
-			Debug.Log ("piss");
 		}
 	}
 
