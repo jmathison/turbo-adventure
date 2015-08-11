@@ -1,6 +1,15 @@
 <<<<<<< HEAD
 m_EditorVersion: 5.1.2f1
 =======
+<<<<<<< HEAD
+<<<<<<< HEAD
+m_EditorVersion: 5.1.2f1
+=======
 m_EditorVersion: 5.1.1p3
 >>>>>>> origin/master
+>>>>>>> e3e76c02e31572d061d5abddda8dcdf0a8fb210c
+=======
+m_EditorVersion: 5.1.1p3
+>>>>>>> origin/master
+>>>>>>> e3e76c02e31572d061d5abddda8dcdf0a8fb210c
 m_StandardAssetsVersion: 0

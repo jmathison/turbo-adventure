@@ -23,6 +23,13 @@ public class ButtonScript : MonoBehaviour {
 	{
 		Application.LoadLevel ("MainMenu");
 	}
+
+	/* Turn off the music
+	public void MusicOff() 
+	{
+		AudioClip.
+	}
+	*/
 	
 	// Update is called once per frame
 	void Update () {
