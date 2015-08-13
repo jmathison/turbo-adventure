@@ -18,6 +18,8 @@ public class PlayerController : MonoBehaviour
 	bool hurt;
 	float hurtTime;
 	int currentLane;
+	int lastMove = 0;
+
 	bool laneSwitched;
 	bool jumping;
 	bool clicked;
@@ -110,9 +112,9 @@ public class PlayerController : MonoBehaviour
 					if (dragTime > 0.1f && dragDistance > 0.1f) {
 						// Dragged
 						if (mousePos.y < Input.mousePosition.y) {
-							moveUp ();
+							move (-1);
 						} else {
-							moveDown ();
+							move (1);
 						}
 					} else if (!jumping) {
 						// Normal click
@@ -137,21 +139,19 @@ public class PlayerController : MonoBehaviour
 		jumping = true;
 	}
 
-	void moveUp ()
+	void move (int dif)
 	{
-		if (currentLane < lanes.Length - 1) {
-			currentLane++;
+		moveTo = currentLane + dif;
+		if (moveTo >= lanes.Length || moveTo < 0) {
+			moveTo = currentLane;
+			laneSwitched = false;
+			return;
 		}
+		lastMove = dif;
+		currentLane = moveTo;
 		laneSwitched = true;
 	}
-
-	void moveDown ()
-	{
-		if (currentLane > 0) {
-			currentLane--;
-		}
-		laneSwitched = true;
-	}
+	
 
 	public bool isJumping ()
 	{
@@ -175,6 +175,13 @@ public class PlayerController : MonoBehaviour
 	void setupSprite ()
 	{
 		portraitSprite.sprite = characterPortrait;
+	}
+
+	void OnTriggerEnter2D(Collider2D coll) {
+		// If we hit a player
+		if(coll.gameObject.tag = "Player"){
+
+		}
 	}
 	
 }
