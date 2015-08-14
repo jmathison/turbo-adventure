@@ -25,7 +25,7 @@ public class ObstacleController : MonoBehaviour {
 			if(playerController != null && !playerController.isJumping()){
 				// Knockback and set hurt
 				this.GetComponent<AudioSource>().Play();
-				coll.gameObject.transform.Translate(new Vector3(-.5f, 0, 0));
+				coll.gameObject.transform.Translate(new Vector3(-2.5f, 0, 0));
 				//Hacked out of the player by Kevin 05/04
 				CameraShakeController camShake = Camera.main.GetComponent<CameraShakeController> ();
 				//Pass in obstacle type for camshake amount.

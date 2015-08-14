@@ -19,7 +19,7 @@ public class PlayerController : MonoBehaviour
 	private GameController controllerScript;
 
 	public GameObject scoreText;
-	private ks_code_score scoreScript;
+//	private ks_code_score scoreScript;
 
 	public AudioClip bump;
 
@@ -34,27 +34,33 @@ public class PlayerController : MonoBehaviour
 	Image portraitSprite;
 	float dragTime;
 	[HideInInspector]
-	public bool alive = true;
+	private bool alive = true;
 	private Animator animator;
+
+	void Awake()
+	{
+		portraitSprite = portraitObject.GetComponent<Image> ();
+		hurt = false;
+		alive = true;
+		//Kevin added 08/04
+		controllerScript = gameController.GetComponent<GameController>();
+		//Make it start not alive.
+		Vector3 initPos = new Vector3(100, 10, 0);
+		this.transform.position = initPos;
+		
+		standard = this.GetComponent<SpriteRenderer> ().material;
+		currentLane = startingLane;
+		animator = (Animator)this.GetComponent<Animator> ();
+		//		portraitSprite = portraitObject.GetComponent<Image> ();
+		
+		setupSprite ();
+		//		snapToLane ();
+	}
 
 	// Use this for initialization
 	void Start ()
 	{
-		//Kevin added 08/04
-		controllerScript = gameController.GetComponent<GameController>();
-		scoreScript = scoreText.GetComponent<ks_code_score>();
-		//Make it start not alive.
-		Vector3 initPos = new Vector3(100, 10, 0);
-		this.transform.position = initPos;
 
-		standard = this.GetComponent<SpriteRenderer> ().material;
-		currentLane = startingLane;
-		animator = (Animator)this.GetComponent<Animator> ();
-		portraitSprite = portraitObject.GetComponent<Image> ();
-
-		setupSprite ();
-		snapToLane ();
-//		setMaterials(deadMat);
 	}
 
 	void OnMouseDown ()
@@ -68,17 +74,11 @@ public class PlayerController : MonoBehaviour
 	public void setHurt ()
 	{
 		hurt = true;
-//		CameraShakeController camShake = Camera.main.GetComponent<CameraShakeController> ();
-//		//Pass in obstacle type for camshake amount.
-//		if (camShake != null)
-//			camShake.StartCamShake();
 		Vector3 checkPosition = Camera.main.WorldToViewportPoint (this.transform.position);
 		if (checkPosition.x < .01) {
 			this.alive = false;
 			this.transform.position = new Vector3(100, 0, 0);
 			setMaterials (deadMat);
-			//ks_code_score function
-			scoreScript.PlayerDeath();
 			//GameController function
 			controllerScript.PlayerDied();
 		}
@@ -91,6 +91,7 @@ public class PlayerController : MonoBehaviour
 	void Update ()
 	{
 		if (alive) {
+			//Debug.Log(this.name + "is alive!");
 
 			// Check and set hurt sprite materials
 			if (hurt) {
@@ -201,12 +202,13 @@ public class PlayerController : MonoBehaviour
 	//Kevin Added 08/04
 	public void SpawnPlayer()
 	{
+		alive = true;
 		snapToLane();
 		//Should not be hard coded.
 		this.transform.position = new Vector3(2.5f, this.transform.position.y, this.transform.position.z);
 		portraitSprite.sprite = characterPortrait;
-		//ks_code_score function
-		scoreScript.PlayerCreated();
+		Debug.Log("i am player " + this.name + " I am at position " + this.transform.position);
+
 		setMaterials(standard);
 	}
 }
