@@ -18,6 +18,14 @@ public class PlayerController : MonoBehaviour
 	public GameObject gameController;
 	private GameController controllerScript;
 
+	//Kevin added 08/18
+	private bool movingUp = false;
+	private bool movingDown = false;
+	private bool justHit = false;
+	private Vector3 movePos;
+	private float knockBackSpeed = 15;
+	private bool fallingBack = false;
+
 	public GameObject scoreText;
 //	private ks_code_score scoreScript;
 
@@ -34,14 +42,13 @@ public class PlayerController : MonoBehaviour
 	Image portraitSprite;
 	float dragTime;
 	[HideInInspector]
-	private bool alive = true;
+	private bool alive = false;
 	private Animator animator;
 
 	void Awake()
 	{
 		portraitSprite = portraitObject.GetComponent<Image> ();
 		hurt = false;
-		alive = true;
 		//Kevin added 08/04
 		controllerScript = gameController.GetComponent<GameController>();
 		//Make it start not alive.
@@ -54,26 +61,52 @@ public class PlayerController : MonoBehaviour
 		//		portraitSprite = portraitObject.GetComponent<Image> ();
 		
 		setupSprite ();
-		//		snapToLane ();
 	}
-
-	// Use this for initialization
-	void Start ()
-	{
-
-	}
-
 	void OnMouseDown ()
 	{
 		mousePos = Input.mousePosition;
 		clicked = true;
 		dragTime = 0;
-	
+	}
+
+	//Make getting hit not teleport
+	void moveToPos()
+	{
+		if(this.transform.position.x > movePos.x)
+		{
+			transform.Translate(Vector3.right * -knockBackSpeed * Time.deltaTime);
+		}
+		else{
+			fallingBack = false;
+		}
+	}
+
+	public void setMovePos(Vector3 position)
+	{
+		if(!fallingBack)
+		{
+			fallingBack = true;
+			movePos = position;
+		}
 	}
 
 	public void setHurt ()
 	{
 		hurt = true;
+//		Vector3 checkPosition = Camera.main.WorldToViewportPoint (this.transform.position);
+//		if (checkPosition.x < .01) {
+//			this.alive = false;
+//			this.transform.position = new Vector3(100, 0, 0);
+//			setMaterials (deadMat);
+//			//GameController function
+//			controllerScript.PlayerDied();
+//		}
+//		else{
+			setMaterials(hurtMat);
+//		}
+	}
+
+	private void CheckDead(){
 		Vector3 checkPosition = Camera.main.WorldToViewportPoint (this.transform.position);
 		if (checkPosition.x < .01) {
 			this.alive = false;
@@ -82,16 +115,15 @@ public class PlayerController : MonoBehaviour
 			//GameController function
 			controllerScript.PlayerDied();
 		}
-		else{
-			setMaterials(hurtMat);
-		}
 	}
-	
+
 	// Update is called once per frame
 	void Update ()
 	{
-		if (alive) {
-			//Debug.Log(this.name + "is alive!");
+		if (alive) 
+		{
+			moveToPos();
+			CheckDead();
 
 			// Check and set hurt sprite materials
 			if (hurt) {
@@ -147,9 +179,8 @@ public class PlayerController : MonoBehaviour
 				snapToLane ();
 				this.GetComponent<AudioSource> ().Play ();
 				laneSwitched = false;
+				StartCoroutine(WaitAndReset());
 			}
-
-
 		}
 	}
 
@@ -161,6 +192,8 @@ public class PlayerController : MonoBehaviour
 
 	void moveUp ()
 	{
+		movingUp = true;
+		movingDown = false;
 		if (currentLane < lanes.Length - 1) {
 			currentLane++;
 		}
@@ -169,6 +202,8 @@ public class PlayerController : MonoBehaviour
 
 	void moveDown ()
 	{
+		movingUp = false;
+		movingDown = true;
 		if (currentLane > 0) {
 			currentLane--;
 		}
@@ -194,20 +229,69 @@ public class PlayerController : MonoBehaviour
 		portraitSprite.material = material;
 	}
 
+	IEnumerator WaitAndReset()
+	{
+		yield return new WaitForSeconds(0.2f);
+		movingUp = false;
+		movingDown = false;
+	}
+
+	void OnTriggerEnter2D(Collider2D other)
+	{
+		if(other.gameObject.tag == "Player" && !justHit && alive)
+		{
+			if(movingUp)
+			{
+				moveDown();
+			}
+			else if(movingDown)
+			{
+				moveUp();
+			}
+			else 
+			{
+				setHurt();
+				Vector3 newPos = new Vector3(this.transform.position.x - 1.5f, this.transform.position.y, this.transform.position.z);
+				setMovePos(newPos);
+			}
+			justHit = true;
+			StartCoroutine(WaitAndNotHurt());
+		}
+	}
+
+	void OnTriggerStay2D(Collider2D other)
+	{
+		if(other.gameObject.tag == "Player" && !justHit && alive)
+		{
+			setHurt();
+			Vector3 newPos = new Vector3(this.transform.position.x - 1.5f, this.transform.position.y, this.transform.position.z);
+			setMovePos(newPos);
+			justHit = true;
+			StartCoroutine(WaitAndNotHurt());
+		}
+	}
+
+	IEnumerator WaitAndNotHurt()
+	{
+		yield return new WaitForSeconds(0.3f);
+		justHit = false;
+	}
+
 	void setupSprite ()
 	{
 		portraitSprite.sprite = mysteryPortrait;
 	}
 
 	//Kevin Added 08/04
-	public void SpawnPlayer()
+	public void SpawnPlayer(float xPos)
 	{
+		//xPos increases as spawns go on, so they spawn colliding with each other. Also challenge.
 		alive = true;
 		snapToLane();
+		movePos = this.transform.position;
 		//Should not be hard coded.
-		this.transform.position = new Vector3(2.5f, this.transform.position.y, this.transform.position.z);
+		this.transform.position = new Vector3(xPos, this.transform.position.y, this.transform.position.z);
 		portraitSprite.sprite = characterPortrait;
-		Debug.Log("i am player " + this.name + " I am at position " + this.transform.position);
 
 		setMaterials(standard);
 	}

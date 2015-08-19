@@ -4,17 +4,19 @@ using UnityEngine.UI;
 
 public class GameController : MonoBehaviour
 {
-
 	public List<GameObject> players;
-	bool alive = true;
-
+	public Text characterTimer;
+	public Text nextCharacter;
 	//Kevin adding player stuff 08/04
 	private float creationCounter = 0;
-	private int creationTimeNext = 10;
+	private int creationTimeNext = 30;
 	private int playerCount = 0;
 	private int playerSpawnCount = 0;
 	private int maxPlayers;
 	private bool oneShot = false;
+
+	//Kevin added 08/18
+	private float initXPos = 2.5f;
 	// Use this for initialization
 	void Start ()
 	{
@@ -22,28 +24,34 @@ public class GameController : MonoBehaviour
 		playerSpawnCount = 0;
 
 		maxPlayers = players.Count;
-		Debug.Log("player count is " + playerCount);
 		SpawnPlayers(0);
 	}
 	
 	// Update is called once per frame
 	void Update ()
 	{
-		if (alive) {
-			//Original script.
-			creationCounter += Time.deltaTime;
-			if(playerSpawnCount < maxPlayers && creationCounter > creationTimeNext)
-			{
-				SpawnPlayers(playerSpawnCount);
-				creationCounter = 0;
-			}
-			else if(playerCount >= maxPlayers){
-				oneShot = true;
-			}
-
-			if (playerCount <= 0) {
-				Application.LoadLevel(2);
-			}
+		if(characterTimer.enabled)
+		{
+			nextCharacter.enabled = true;
+			characterTimer.text = Mathf.Floor(creationTimeNext - creationCounter).ToString();
+		}
+		//Original script.
+		creationCounter += Time.deltaTime;
+		if(playerSpawnCount < maxPlayers && creationCounter > creationTimeNext)
+		{
+			SpawnPlayers(playerSpawnCount);
+			creationCounter = 0;
+		}
+		if(playerSpawnCount >= maxPlayers)
+		{
+			characterTimer.enabled = false;
+			nextCharacter.enabled = true;
+		}
+		else if(playerCount >= maxPlayers){
+//			oneShot = true;
+		}
+		if (playerCount <= 0) {
+			Application.LoadLevel(2);
 		}
 	}
 
@@ -54,10 +62,10 @@ public class GameController : MonoBehaviour
 
 	void SpawnPlayers(int playerToSpawn)
 	{
-		Debug.Log("I spawned " + playerToSpawn + ", " + players[playerToSpawn].name);
-		players[playerToSpawn].GetComponent<PlayerController>().SpawnPlayer();
+		players[playerToSpawn].GetComponent<PlayerController>().SpawnPlayer(initXPos);
 		playerCount++;
 		playerSpawnCount++;
-		oneShot = true;
+//		oneShot = true;
+		initXPos += 1.5f;
 	}
 }
