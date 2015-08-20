@@ -20,7 +20,7 @@ public class ButtonScript : MonoBehaviour {
 
 	public void LoadMenu ()
 	{
-		Application.LoadLevel ("MainMenu");
+		Application.LoadLevel (0);
 	}
 	
 	// Update is called once per frame

@@ -27,7 +27,7 @@ public class PlayerController : MonoBehaviour
 	private bool fallingBack = false;
 
 	public GameObject scoreText;
-//	private ks_code_score scoreScript;
+	private ks_code_score scoreScript;
 
 	public AudioClip bump;
 
@@ -47,6 +47,7 @@ public class PlayerController : MonoBehaviour
 
 	void Awake()
 	{
+		scoreScript = scoreText.GetComponent<ks_code_score>();
 		portraitSprite = portraitObject.GetComponent<Image> ();
 		hurt = false;
 		//Kevin added 08/04
@@ -112,6 +113,7 @@ public class PlayerController : MonoBehaviour
 			this.alive = false;
 			this.transform.position = new Vector3(100, 0, 0);
 			setMaterials (deadMat);
+			scoreScript.PlayerDeath();
 			//GameController function
 			controllerScript.PlayerDied();
 		}
@@ -152,7 +154,7 @@ public class PlayerController : MonoBehaviour
 			}
 
 			// Process mouse button holding / touches
-			if (clicked) {
+			if (clicked && alive) {
 
 				if (Input.GetMouseButton (0)) {
 					setMaterials (selectedMat);
@@ -161,7 +163,7 @@ public class PlayerController : MonoBehaviour
 					clicked = false;
 					setMaterials (standard);
 					float dragDistance = Vector3.Distance (mousePos, Input.mousePosition);
-					if (dragTime > 0.1f && dragDistance > 0.1f) {
+					if (dragTime > 0.01f && dragDistance > 0.01f) {
 						// Dragged
 						if (mousePos.y < Input.mousePosition.y) {
 							moveUp ();
@@ -186,8 +188,8 @@ public class PlayerController : MonoBehaviour
 
 	void jump ()
 	{
-		animator.SetTrigger ("playerJump");
-		jumping = true;
+//		animator.SetTrigger ("playerJump");
+//		jumping = true;
 	}
 
 	void moveUp ()
@@ -285,6 +287,7 @@ public class PlayerController : MonoBehaviour
 	//Kevin Added 08/04
 	public void SpawnPlayer(float xPos)
 	{
+		scoreScript.PlayerCreated();
 		//xPos increases as spawns go on, so they spawn colliding with each other. Also challenge.
 		alive = true;
 		snapToLane();

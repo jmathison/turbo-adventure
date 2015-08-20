@@ -11,17 +11,33 @@ public class LaneController : MonoBehaviour {
 	float secondsToSpawn;
 	float secondsSinceSpawn = 0;
 
+	//KS Added 08/19
+	private float levelStartTime;
+	private float increaseDifficultyTime = 30;
+	private float difficultyTimer = 0f;
+	private float spawnNextTime = 10;
+
 	// Use this for initialization
 	void Start () {
+		levelStartTime = Time.time;
 		secondsToSpawn = Random.Range(3, 10);
 	}
 	
 	// Update is called once per frame
 	void Update () {
+		difficultyTimer += Time.deltaTime;
+		if(difficultyTimer > increaseDifficultyTime)
+		{
+			if(spawnNextTime > 4){
+				spawnNextTime -= 2.5f;
+			}
+			difficultyTimer = 0;
+			Debug.Log("Harder");
+
+		}
+
 		secondsSinceSpawn += Time.deltaTime;
 		if(secondsSinceSpawn > secondsToSpawn){
-
-
 			secondsSinceSpawn = 0;
 			//Modify max number for the time for spawning more.
 			if(PlayerPrefs.HasKey("Viewed"))
@@ -34,11 +50,12 @@ public class LaneController : MonoBehaviour {
 						GameObject newObstacle = GameObject.Instantiate(obstaclePrefab);
 						newObstacle.GetComponent<ObstacleController>().currentLane = this.gameObject;
 					}
-					else{
+					else
+					{
 						GameObject newObstacle = GameObject.Instantiate(littleObstacle);
 						newObstacle.GetComponent<ks_SmallObstacleController1>().currentLane = this.gameObject;
 					}
-					secondsToSpawn = Random.Range(1,10);
+					secondsToSpawn = Random.Range(1,spawnNextTime);
 				}
 				else if(PlayerPrefs.GetInt("Viewed") == 0)
 				{

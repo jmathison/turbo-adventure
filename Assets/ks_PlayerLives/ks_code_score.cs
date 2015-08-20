@@ -10,9 +10,7 @@ public class ks_code_score : MonoBehaviour
 	
 	//A multiplier that increases based on living characters.
 	private int multiplier = 10;
-	
-	
-	
+
 	// Use this for initialization
 	void Start () 
 	{
@@ -27,7 +25,6 @@ public class ks_code_score : MonoBehaviour
 		
 		//Also increase score if an obstacle is dodged.
 		//Increase score if the player collects a gem/monies.
-		
 	}
 	
 	//None of the stuff below here is necessary, can be cut if need be.
@@ -41,7 +38,8 @@ public class ks_code_score : MonoBehaviour
 	
 	public void PlayerDeath()
 	{
-		if(multiplier >= 5){
+		if(multiplier >= 5)
+		{
 			multiplier -= 5;
 		}
 	}

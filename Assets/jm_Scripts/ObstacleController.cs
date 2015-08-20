@@ -22,7 +22,9 @@ public class ObstacleController : MonoBehaviour {
 	void OnTriggerEnter2D(Collider2D coll) {
 		if(coll.gameObject.tag == "Player"){
 			PlayerController playerController = coll.gameObject.GetComponent<PlayerController>();
-			if(playerController != null && !playerController.isJumping()){
+//			if(playerController != null && !playerController.isJumping()){
+			if(playerController != null)
+			{
 				// Knockback and set hurt
 				this.GetComponent<AudioSource>().Play();
 				Vector3 hitAmount = new Vector3(coll.transform.position.x -1.25f, coll.transform.position.y, coll.transform.position.z);
