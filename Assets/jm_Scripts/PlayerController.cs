@@ -5,43 +5,43 @@ using System.Collections;
 public class PlayerController : MonoBehaviour
 {
 
-	public int startingLane;
-	public GameObject[] lanes;
-	public GameObject portraitObject;
-	public Sprite characterPortrait;
-	public Sprite mysteryPortrait;
-	public Material selectedMat;
-	public Material hurtMat;
-	public Material deadMat;
+    public int startingLane;
+    public GameObject[] lanes;
+    public GameObject portraitObject;
+    public Sprite characterPortrait;
+    public Sprite mysteryPortrait;
+    public Material selectedMat;
+    public Material hurtMat;
+    public Material deadMat;
 
-	public GameObject gameController;
-	private GameController controllerScript;
+    public GameObject gameController;
+    private GameController controllerScript;
 
-	private bool movingUp = false;
-	private bool movingDown = false;
-	private bool justHit = false;
-	private Vector3 movePos;
-	private float translateSpeed = 5;
-	private bool moving = false;
+    private bool movingUp = false;
+    private bool movingDown = false;
+    private bool justHit = false;
+    private Vector3 movePos;
+    private float translateSpeed = 5;
+    private bool moving = false;
 
-	public GameObject scoreText;
-	private ks_code_score scoreScript;
+    public GameObject scoreText;
+    private ks_code_score scoreScript;
 
-	public AudioClip bump;
+    public AudioClip bump;
 
     bool hurt = false;
-	float hurtTime;
-	int currentLane;
-	bool laneSwitched;
-	bool jumping;
-	bool clicked;
-	Vector3 mousePos;
-	Material standard;
-	Image portraitSprite;
-	float dragTime;
-	[HideInInspector]
-	private bool alive = false;
-	private Animator animator;
+    float hurtTime;
+    int currentLane;
+    bool laneSwitched;
+    bool jumping;
+    bool clicked;
+    Vector3 mousePos;
+    Material standard;
+    Image portraitSprite;
+    float dragTime;
+    [HideInInspector]
+    private bool alive = false;
+    private Animator animator;
 
     private bool invincible = true;
 
@@ -51,20 +51,25 @@ public class PlayerController : MonoBehaviour
     private bool going = false;
     private MenuAnimations menuScript;
 
-	void Awake()
-	{
+    void Awake()
+    {
         //For character selection
-        if (Application.loadedLevelName == "MainMenu_movement 1")
+        if (Application.loadedLevelName == "MainMenu")
             menuScript = Camera.main.GetComponent<MenuAnimations>();
-		scoreScript = scoreText.GetComponent<ks_code_score>();
-		portraitSprite = portraitObject.GetComponent<Image> ();
-		controllerScript = gameController.GetComponent<GameController>();
-        PositionOffScreen();
-        standard = this.GetComponent<SpriteRenderer> ().material;
-		currentLane = startingLane;
-		animator = (Animator)this.GetComponent<Animator> ();
-		setupSprite ();
-	}
+        else
+        {
+            scoreScript = scoreText.GetComponent<ks_code_score>();
+            controllerScript = gameController.GetComponent<GameController>();
+            PositionOffScreen();
+        }
+        portraitSprite = portraitObject.GetComponent<Image>();
+        
+        
+        standard = this.GetComponent<SpriteRenderer>().material;
+        currentLane = startingLane;
+        animator = (Animator)this.GetComponent<Animator>();
+        setupSprite();
+    }
 
     void PositionOffScreen()
     {
@@ -72,11 +77,11 @@ public class PlayerController : MonoBehaviour
         this.transform.position = initPos;
     }
 
-	void OnMouseDown ()
-	{
-        if (Application.loadedLevelName == "MainMenu_movement 1")
+    void OnMouseDown()
+    {
+        if (Application.loadedLevelName == "MainMenu")
         {
-            if(!going)
+            if (!going)
             {
                 StartCoroutine(MenuJump());
                 going = true;
@@ -84,15 +89,15 @@ public class PlayerController : MonoBehaviour
         }
 
         mousePos = Input.mousePosition;
-		clicked = true;
-		dragTime = 0;
-	}
+        clicked = true;
+        dragTime = 0;
+    }
 
     private IEnumerator MenuJump()
     {
         Vector3 initialTrans = this.gameObject.transform.position;
         float yChange = this.transform.position.y;
-        while(this.transform.position.y <= initialTrans.y + 0.4)
+        while (this.transform.position.y <= initialTrans.y + 0.4)
         {
             yChange += 10 * Time.deltaTime;
             this.transform.position = new Vector3(this.transform.position.x, yChange, this.transform.position.z);
@@ -105,6 +110,7 @@ public class PlayerController : MonoBehaviour
             this.transform.position = new Vector3(this.transform.position.x, yChange, this.transform.position.z);
             yield return null;
         }
+        this.transform.position = initialTrans;
         SendChosen();
     }
 
@@ -113,10 +119,10 @@ public class PlayerController : MonoBehaviour
         menuScript.CharacterChosen(this.gameObject.name);
     }
 
-	//Translate to a new position. Used for getting hit, or running in.
-	void moveToPos()
-	{
-        if(moving)
+    //Translate to a new position. Used for getting hit, or running in.
+    void moveToPos()
+    {
+        if (moving)
         {
             //Moves left
             if (direction == 0 && !invincible)
@@ -148,21 +154,21 @@ public class PlayerController : MonoBehaviour
                 }
             }
         }
-        
-	}
+
+    }
 
     public void HitObstacle(float distance)
     {
-        if(!invincible)
+        if (!invincible)
         {
             setMovePos(new Vector3(this.transform.position.x + distance, this.transform.position.y, this.transform.position.z));
             setHurt();
         }
-            
+
     }
 
-	private void setMovePos(Vector3 position)
-	{
+    private void setMovePos(Vector3 position)
+    {
         movePos = position;
 
         //Determine if point is ahead of or behind current point.
@@ -172,20 +178,20 @@ public class PlayerController : MonoBehaviour
             direction = 1;
 
         if (!moving)
-		{
-			moving = true;
-		}
-	}
+        {
+            moving = true;
+        }
+    }
 
-	private void setHurt ()
-	{
-		hurt = true;
-		setMaterials(hurtMat);
-	}
-
-	private void CheckDead()
+    private void setHurt()
     {
-        if(!invincible)
+        hurt = true;
+        setMaterials(hurtMat);
+    }
+
+    private void CheckDead()
+    {
+        if (!invincible)
         {
             Vector3 checkPosition = Camera.main.WorldToViewportPoint(this.transform.position);
             if (checkPosition.x < .01)
@@ -198,130 +204,148 @@ public class PlayerController : MonoBehaviour
                 controllerScript.PlayerDeath();
             }
         }
-	}
+    }
 
-	// Update is called once per frame
-	void Update ()
-	{
-		if (alive) 
-		{
-			moveToPos();
-			CheckDead();
+    // Update is called once per frame
+    void Update()
+    {
+        if (alive)
+        {
+            moveToPos();
+            CheckDead();
 
-			// Check and set hurt sprite materials
-			if (hurt) {
-				hurtTime += Time.deltaTime;
-				if (hurtTime > 0.3f) {
-					setMaterials (standard);
-					hurt = false;
-					hurtTime = 0;
-				}
-			}
+            // Check and set hurt sprite materials
+            if (hurt)
+            {
+                hurtTime += Time.deltaTime;
+                if (hurtTime > 0.3f)
+                {
+                    setMaterials(standard);
+                    hurt = false;
+                    hurtTime = 0;
+                }
+            }
 
-			// Check animation states for jumping effect
-			if (jumping) {
-				if (animator.GetCurrentAnimatorStateInfo (0).IsName ("player-jump"))
-					this.transform.Translate (new Vector3 (0, .2f, 0));
-				else if (animator.GetCurrentAnimatorStateInfo (0).IsName ("player-fall"))
-					this.transform.Translate (new Vector3 (0, -.2f, 0));
-				else if (animator.GetCurrentAnimatorStateInfo (0).IsName ("player-idle")) {
-					jumping = false;
-					// Snap to lane when jump is finished in case of weird jump behavior
-					//snapToLane ();
-				}
-				if (animator.GetCurrentAnimatorStateInfo (0).IsName ("player-idle")) {
-					jumping = false;
-				}
-			}
+            // Check animation states for jumping effect
+            if (jumping)
+            {
+                if (animator.GetCurrentAnimatorStateInfo(0).IsName("player-jump"))
+                    this.transform.Translate(new Vector3(0, .2f, 0));
+                else if (animator.GetCurrentAnimatorStateInfo(0).IsName("player-fall"))
+                    this.transform.Translate(new Vector3(0, -.2f, 0));
+                else if (animator.GetCurrentAnimatorStateInfo(0).IsName("player-idle"))
+                {
+                    jumping = false;
+                    // Snap to lane when jump is finished in case of weird jump behavior
+                    //snapToLane ();
+                }
+                if (animator.GetCurrentAnimatorStateInfo(0).IsName("player-idle"))
+                {
+                    jumping = false;
+                }
+            }
 
-			// Process mouse button holding / touches
-			if (clicked && alive) {
+            // Process mouse button holding / touches
+            if (clicked && alive)
+            {
 
-				if (Input.GetMouseButton (0)) {
-					setMaterials (selectedMat);
-					dragTime += Time.deltaTime;
-				} else {
-					clicked = false;
-					setMaterials (standard);
-					float dragDistance = Vector3.Distance (mousePos, Input.mousePosition);
-					if (dragTime > 0.01f && dragDistance > 0.01f) {
-						// Dragged
-						if (mousePos.y < Input.mousePosition.y) {
-							moveUp ();
-						} else {
-							moveDown ();
-						}
-					} else if (!jumping) {
-						// Normal click
-						jump ();
-					}
-				}
-			}
+                if (Input.GetMouseButton(0))
+                {
+                    setMaterials(selectedMat);
+                    dragTime += Time.deltaTime;
+                }
+                else
+                {
+                    clicked = false;
+                    setMaterials(standard);
+                    float dragDistance = Vector3.Distance(mousePos, Input.mousePosition);
+                    if (dragTime > 0.01f && dragDistance > 0.01f)
+                    {
+                        // Dragged
+                        if (mousePos.y < Input.mousePosition.y)
+                        {
+                            moveUp();
+                        }
+                        else
+                        {
+                            moveDown();
+                        }
+                    }
+                    else if (!jumping)
+                    {
+                        // Normal click
+                        jump();
+                    }
+                }
+            }
 
-			if (laneSwitched) {
-				snapToLane ();
-				this.GetComponent<AudioSource> ().Play ();
-				laneSwitched = false;
-				StartCoroutine(WaitAndReset());
-			}
-		}
-	}
+            if (laneSwitched)
+            {
+                snapToLane();
+                this.GetComponent<AudioSource>().Play();
+                laneSwitched = false;
+                StartCoroutine(WaitAndReset());
+            }
+        }
+    }
 
-	void jump ()
-	{
-//		animator.SetTrigger ("playerJump");
-//		jumping = true;
-	}
+    void jump()
+    {
+        //		animator.SetTrigger ("playerJump");
+        //		jumping = true;
+    }
 
-	void moveUp ()
-	{
-		movingUp = true;
-		movingDown = false;
-		if (currentLane < lanes.Length - 1) {
-			currentLane++;
-		}
-		laneSwitched = true;
-	}
+    void moveUp()
+    {
+        movingUp = true;
+        movingDown = false;
+        if (currentLane < lanes.Length - 1)
+        {
+            currentLane++;
+        }
+        laneSwitched = true;
+    }
 
-	void moveDown ()
-	{
-		movingUp = false;
-		movingDown = true;
-		if (currentLane > 0) {
-			currentLane--;
-		}
-		laneSwitched = true;
-	}
+    void moveDown()
+    {
+        movingUp = false;
+        movingDown = true;
+        if (currentLane > 0)
+        {
+            currentLane--;
+        }
+        laneSwitched = true;
+    }
 
-	public bool isJumping ()
-	{
-		return jumping;
-	}
+    public bool isJumping()
+    {
+        return jumping;
+    }
 
-	void snapToLane ()
-	{
-		Vector3 lanePosition = new Vector3 (this.transform.position.x, lanes [currentLane].transform.position.y, this.transform.position.z);
-		this.GetComponent<SpriteRenderer> ().sortingLayerID = lanes [currentLane].GetComponent<SpriteRenderer> ().sortingLayerID;
-		this.gameObject.layer = lanes [currentLane].layer;
-		this.transform.position = lanePosition;
-	}
+    void snapToLane()
+    {
+        Vector3 lanePosition = new Vector3(this.transform.position.x, lanes[currentLane].transform.position.y, this.transform.position.z);
+        this.GetComponent<SpriteRenderer>().sortingLayerID = lanes[currentLane].GetComponent<SpriteRenderer>().sortingLayerID;
+        this.gameObject.layer = lanes[currentLane].layer;
+        this.transform.position = lanePosition;
+    }
 
-	void setMaterials (Material material)
-	{
-		this.GetComponent<SpriteRenderer> ().material = material;
-		portraitSprite.material = material;
-	}
+    void setMaterials(Material material)
+    {
+        this.GetComponent<SpriteRenderer>().material = material;
+        portraitSprite.material = material;
+    }
 
-	IEnumerator WaitAndReset()
-	{
-		yield return new WaitForSeconds(0.2f);
-		movingUp = false;
-		movingDown = false;
-	}
+    IEnumerator WaitAndReset()
+    {
+        yield return new WaitForSeconds(0.2f);
+        movingUp = false;
+        movingDown = false;
+    }
 
-	void OnTriggerEnter2D(Collider2D other)
-	{
-        if(!invincible)
+    void OnTriggerEnter2D(Collider2D other)
+    {
+        if (!invincible)
         {
             if (other.gameObject.tag == "Player" && !justHit && alive)
             {
@@ -336,7 +360,7 @@ public class PlayerController : MonoBehaviour
                 else
                 {
                     //Only hit the player behind the first.
-                    if(other.gameObject.transform.position.x > this.transform.position.x)
+                    if (other.gameObject.transform.position.x > this.transform.position.x)
                     {
                         setHurt();
                         Vector3 newPos = new Vector3(this.transform.position.x - 1.8f, this.transform.position.y, this.transform.position.z);
@@ -347,11 +371,11 @@ public class PlayerController : MonoBehaviour
                 StartCoroutine(WaitAndNotHurt());
             }
         }
-	}
+    }
 
-	void OnTriggerStay2D(Collider2D other)
-	{
-        if(!invincible)
+    void OnTriggerStay2D(Collider2D other)
+    {
+        if (!invincible)
         {
             if (other.gameObject.tag == "Player" && !justHit && alive)
             {
@@ -362,20 +386,20 @@ public class PlayerController : MonoBehaviour
                 StartCoroutine(WaitAndNotHurt());
             }
         }
-	}
+    }
 
-	IEnumerator WaitAndNotHurt()
-	{
-		yield return new WaitForSeconds(0.4f);
-		justHit = false;
-	}
+    IEnumerator WaitAndNotHurt()
+    {
+        yield return new WaitForSeconds(0.4f);
+        justHit = false;
+    }
 
-	void setupSprite ()
-	{
-		portraitSprite.sprite = mysteryPortrait;
-	}
+    void setupSprite()
+    {
+        portraitSprite.sprite = mysteryPortrait;
+    }
 
-	//Kevin Added 08/04
+    //Kevin Added 08/04
     public void Spawn()
     {
 
@@ -388,15 +412,15 @@ public class PlayerController : MonoBehaviour
 
     }
 
-	public void Spawn(float xPos)
-	{
-		scoreScript.PlayerCreated();
-		alive = true;
-		snapToLane();
+    public void Spawn(float xPos)
+    {
+        scoreScript.PlayerCreated();
+        alive = true;
+        snapToLane();
         this.transform.position = new Vector3(-4, this.transform.position.y, this.transform.position.z);
-		setMovePos(new Vector3(xPos, this.transform.position.y, this.transform.position.z));
-		portraitSprite.sprite = characterPortrait;
+        setMovePos(new Vector3(xPos, this.transform.position.y, this.transform.position.z));
+        portraitSprite.sprite = characterPortrait;
 
-		setMaterials(standard);
-	}
+        setMaterials(standard);
+    }
 }
