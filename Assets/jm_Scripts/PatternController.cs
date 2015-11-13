@@ -9,13 +9,26 @@ public class PatternController : MonoBehaviour {
 
 	// Use this for initialization
 	void Start () {
+
+	}
+
+	public void calcWidth(){
 		foreach(Transform child in this.transform){
-            if(child.tag == "end")
-            {
-                //Should work 
-                width = child.gameObject.transform.position.x;
-                //Do the thing.
-            }
+			if(child.CompareTag("end"))
+			{
+				Debug.Log("Found end");
+				//Should work 
+				width = child.gameObject.transform.localPosition.x;
+				return;
+				//Do the thing.
+			}
+			else{
+				if(width < child.gameObject.transform.localPosition.x){
+					width = child.gameObject.transform.localPosition.x;
+				}
+			}
+
+
 		}
 	}
 

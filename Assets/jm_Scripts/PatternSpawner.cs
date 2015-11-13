@@ -14,10 +14,13 @@ public class PatternSpawner : MonoBehaviour {
 		float nextPlacementX = rightEdge.x;
 		for(int i = 0; i < patterns.Length; i++){
 			if (patterns[i] != null){
+				Debug.Log(nextPlacementX);
 				GameObject newPattern = (GameObject)Instantiate(patterns[i], new Vector3(nextPlacementX, 0, 0), Quaternion.identity) ;
 				PatternController pc = patterns[i].GetComponent<PatternController>();
 				if(pc != null){
 					pc.lanes = this.lanes;
+					pc.calcWidth();
+					Debug.Log (pc.width);
 					nextPlacementX += pc.width;
 				}
 				else{
