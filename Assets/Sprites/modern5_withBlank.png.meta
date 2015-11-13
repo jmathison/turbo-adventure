@@ -1,0 +1,1112 @@
+fileFormatVersion: 2
+guid: b9c5f5049377ad44896630ead8b4b71a
+timeCreated: 1446861970
+licenseType: Free
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: modern5_withBlank_0
+    21300002: modern5_withBlank_1
+    21300004: modern5_withBlank_2
+    21300006: modern5_withBlank_3
+    21300008: modern5_withBlank_4
+    21300010: modern5_withBlank_5
+    21300012: modern5_withBlank_6
+    21300014: modern5_withBlank_7
+    21300016: modern5_withBlank_8
+    21300018: modern5_withBlank_9
+    21300020: modern5_withBlank_10
+    21300022: modern5_withBlank_11
+    21300024: modern5_withBlank_12
+    21300026: modern5_withBlank_13
+    21300028: modern5_withBlank_14
+    21300030: modern5_withBlank_15
+    21300032: modern5_withBlank_16
+    21300034: modern5_withBlank_17
+    21300036: modern5_withBlank_18
+    21300038: modern5_withBlank_19
+    21300040: modern5_withBlank_20
+    21300042: modern5_withBlank_21
+    21300044: modern5_withBlank_22
+    21300046: modern5_withBlank_23
+    21300048: modern5_withBlank_24
+    21300050: modern5_withBlank_25
+    21300052: modern5_withBlank_26
+    21300054: modern5_withBlank_27
+    21300056: modern5_withBlank_28
+    21300058: modern5_withBlank_29
+    21300060: modern5_withBlank_30
+    21300062: modern5_withBlank_31
+    21300064: modern5_withBlank_32
+    21300066: modern5_withBlank_33
+    21300068: modern5_withBlank_34
+    21300070: modern5_withBlank_35
+    21300072: modern5_withBlank_36
+    21300074: modern5_withBlank_37
+    21300076: modern5_withBlank_38
+    21300078: modern5_withBlank_39
+    21300080: modern5_withBlank_40
+    21300082: modern5_withBlank_41
+    21300084: modern5_withBlank_42
+    21300086: modern5_withBlank_43
+    21300088: modern5_withBlank_44
+    21300090: modern5_withBlank_45
+    21300092: modern5_withBlank_46
+    21300094: modern5_withBlank_47
+    21300096: modern5_withBlank_48
+    21300098: modern5_withBlank_49
+    21300100: modern5_withBlank_50
+    21300102: modern5_withBlank_51
+    21300104: modern5_withBlank_52
+    21300106: modern5_withBlank_53
+    21300108: modern5_withBlank_54
+    21300110: modern5_withBlank_55
+    21300112: modern5_withBlank_56
+    21300114: modern5_withBlank_57
+    21300116: modern5_withBlank_58
+    21300118: modern5_withBlank_59
+    21300120: modern5_withBlank_60
+    21300122: modern5_withBlank_61
+    21300124: modern5_withBlank_62
+    21300126: modern5_withBlank_63
+    21300128: modern5_withBlank_64
+    21300130: modern5_withBlank_65
+    21300132: modern5_withBlank_66
+    21300134: modern5_withBlank_67
+    21300136: modern5_withBlank_68
+    21300138: modern5_withBlank_69
+    21300140: modern5_withBlank_70
+    21300142: modern5_withBlank_71
+    21300144: modern5_withBlank_72
+    21300146: modern5_withBlank_73
+    21300148: modern5_withBlank_74
+    21300150: modern5_withBlank_75
+    21300152: modern5_withBlank_76
+    21300154: modern5_withBlank_77
+    21300156: modern5_withBlank_78
+    21300158: modern5_withBlank_79
+    21300160: modern5_withBlank_80
+    21300162: modern5_withBlank_81
+    21300164: modern5_withBlank_82
+    21300166: modern5_withBlank_83
+    21300168: modern5_withBlank_84
+    21300170: modern5_withBlank_85
+    21300172: modern5_withBlank_86
+    21300174: modern5_withBlank_87
+    21300176: modern5_withBlank_88
+    21300178: modern5_withBlank_89
+    21300180: modern5_withBlank_90
+    21300182: modern5_withBlank_91
+    21300184: modern5_withBlank_92
+    21300186: modern5_withBlank_93
+    21300188: modern5_withBlank_94
+    21300190: modern5_withBlank_95
+  serializedVersion: 2
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 1
+    linearTexture: 0
+    correctGamma: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: .25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 0
+  cubemapConvolution: 0
+  cubemapConvolutionSteps: 8
+  cubemapConvolutionExponent: 1.5
+  seamlessCubemap: 0
+  textureFormat: -1
+  maxTextureSize: 2048
+  textureSettings:
+    filterMode: -1
+    aniso: 16
+    mipBias: -1
+    wrapMode: 1
+  nPOTScale: 0
+  lightmap: 0
+  rGBM: 0
+  compressionQuality: 50
+  allowsAlphaSplitting: 0
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: .5, y: .5}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spritePixelsToUnits: 100
+  alphaIsTransparency: 1
+  textureType: 8
+  buildTargetSettings: []
+  spriteSheet:
+    sprites:
+    - name: modern5_withBlank_0
+      rect:
+        serializedVersion: 2
+        x: 4
+        y: 448
+        width: 36
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: modern5_withBlank_1
+      rect:
+        serializedVersion: 2
+        x: 50
+        y: 448
+        width: 36
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: modern5_withBlank_2
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 448
+        width: 36
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: modern5_withBlank_3
+      rect:
+        serializedVersion: 2
+        x: 146
+        y: 448
+        width: 30
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: modern5_withBlank_4
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 448
+        width: 30
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: modern5_withBlank_5
+      rect:
+        serializedVersion: 2
+        x: 238
+        y: 448
+        width: 30
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: modern5_withBlank_6
+      rect:
+        serializedVersion: 2
+        x: 284
+        y: 448
+        width: 34
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: modern5_withBlank_7
+      rect:
+        serializedVersion: 2
+        x: 330
+        y: 448
+        width: 34
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: modern5_withBlank_8
+      rect:
+        serializedVersion: 2
+        x: 376
+        y: 448
+        width: 34
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: modern5_withBlank_9
+      rect:
+        serializedVersion: 2
+        x: 420
+        y: 448
+        width: 34
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: modern5_withBlank_10
+      rect:
+        serializedVersion: 2
+        x: 466
+        y: 448
+        width: 34
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: modern5_withBlank_11
+      rect:
+        serializedVersion: 2
+        x: 512
+        y: 448
+        width: 34
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: modern5_withBlank_12
+      rect:
+        serializedVersion: 2
+        x: 6
+        y: 384
+        width: 32
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: modern5_withBlank_13
+      rect:
+        serializedVersion: 2
+        x: 52
+        y: 384
+        width: 32
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: modern5_withBlank_14
+      rect:
+        serializedVersion: 2
+        x: 98
+        y: 384
+        width: 32
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: modern5_withBlank_15
+      rect:
+        serializedVersion: 2
+        x: 150
+        y: 384
+        width: 26
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: modern5_withBlank_16
+      rect:
+        serializedVersion: 2
+        x: 196
+        y: 384
+        width: 26
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: modern5_withBlank_17
+      rect:
+        serializedVersion: 2
+        x: 242
+        y: 384
+        width: 26
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: modern5_withBlank_18
+      rect:
+        serializedVersion: 2
+        x: 284
+        y: 384
+        width: 30
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: modern5_withBlank_19
+      rect:
+        serializedVersion: 2
+        x: 330
+        y: 384
+        width: 30
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: modern5_withBlank_20
+      rect:
+        serializedVersion: 2
+        x: 376
+        y: 384
+        width: 30
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: modern5_withBlank_21
+      rect:
+        serializedVersion: 2
+        x: 424
+        y: 384
+        width: 30
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: modern5_withBlank_22
+      rect:
+        serializedVersion: 2
+        x: 470
+        y: 384
+        width: 30
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: modern5_withBlank_23
+      rect:
+        serializedVersion: 2
+        x: 516
+        y: 384
+        width: 30
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: modern5_withBlank_24
+      rect:
+        serializedVersion: 2
+        x: 8
+        y: 320
+        width: 32
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: modern5_withBlank_25
+      rect:
+        serializedVersion: 2
+        x: 54
+        y: 320
+        width: 32
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: modern5_withBlank_26
+      rect:
+        serializedVersion: 2
+        x: 100
+        y: 320
+        width: 32
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: modern5_withBlank_27
+      rect:
+        serializedVersion: 2
+        x: 147
+        y: 320
+        width: 26
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: modern5_withBlank_28
+      rect:
+        serializedVersion: 2
+        x: 193
+        y: 320
+        width: 26
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: modern5_withBlank_29
+      rect:
+        serializedVersion: 2
+        x: 239
+        y: 320
+        width: 26
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: modern5_withBlank_30
+      rect:
+        serializedVersion: 2
+        x: 284
+        y: 320
+        width: 30
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: modern5_withBlank_31
+      rect:
+        serializedVersion: 2
+        x: 330
+        y: 320
+        width: 30
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: modern5_withBlank_32
+      rect:
+        serializedVersion: 2
+        x: 376
+        y: 320
+        width: 30
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: modern5_withBlank_33
+      rect:
+        serializedVersion: 2
+        x: 420
+        y: 320
+        width: 30
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: modern5_withBlank_34
+      rect:
+        serializedVersion: 2
+        x: 466
+        y: 320
+        width: 30
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: modern5_withBlank_35
+      rect:
+        serializedVersion: 2
+        x: 512
+        y: 320
+        width: 30
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: modern5_withBlank_36
+      rect:
+        serializedVersion: 2
+        x: 6
+        y: 256
+        width: 36
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: modern5_withBlank_37
+      rect:
+        serializedVersion: 2
+        x: 52
+        y: 256
+        width: 36
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: modern5_withBlank_38
+      rect:
+        serializedVersion: 2
+        x: 98
+        y: 256
+        width: 36
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: modern5_withBlank_39
+      rect:
+        serializedVersion: 2
+        x: 146
+        y: 256
+        width: 30
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: modern5_withBlank_40
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 256
+        width: 30
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: modern5_withBlank_41
+      rect:
+        serializedVersion: 2
+        x: 238
+        y: 256
+        width: 30
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: modern5_withBlank_42
+      rect:
+        serializedVersion: 2
+        x: 280
+        y: 256
+        width: 34
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: modern5_withBlank_43
+      rect:
+        serializedVersion: 2
+        x: 326
+        y: 256
+        width: 34
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: modern5_withBlank_44
+      rect:
+        serializedVersion: 2
+        x: 372
+        y: 256
+        width: 34
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: modern5_withBlank_45
+      rect:
+        serializedVersion: 2
+        x: 420
+        y: 256
+        width: 34
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: modern5_withBlank_46
+      rect:
+        serializedVersion: 2
+        x: 466
+        y: 256
+        width: 34
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: modern5_withBlank_47
+      rect:
+        serializedVersion: 2
+        x: 512
+        y: 256
+        width: 34
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: modern5_withBlank_48
+      rect:
+        serializedVersion: 2
+        x: 8
+        y: 192
+        width: 30
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: modern5_withBlank_49
+      rect:
+        serializedVersion: 2
+        x: 54
+        y: 192
+        width: 30
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: modern5_withBlank_50
+      rect:
+        serializedVersion: 2
+        x: 100
+        y: 192
+        width: 30
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: modern5_withBlank_51
+      rect:
+        serializedVersion: 2
+        x: 146
+        y: 192
+        width: 30
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: modern5_withBlank_52
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 192
+        width: 30
+        height: 52
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: modern5_withBlank_53
+      rect:
+        serializedVersion: 2
+        x: 238
+        y: 192
+        width: 30
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: modern5_withBlank_54
+      rect:
+        serializedVersion: 2
+        x: 284
+        y: 192
+        width: 30
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: modern5_withBlank_55
+      rect:
+        serializedVersion: 2
+        x: 330
+        y: 192
+        width: 30
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: modern5_withBlank_56
+      rect:
+        serializedVersion: 2
+        x: 376
+        y: 192
+        width: 30
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: modern5_withBlank_57
+      rect:
+        serializedVersion: 2
+        x: 418
+        y: 192
+        width: 34
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: modern5_withBlank_58
+      rect:
+        serializedVersion: 2
+        x: 464
+        y: 192
+        width: 34
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: modern5_withBlank_59
+      rect:
+        serializedVersion: 2
+        x: 510
+        y: 192
+        width: 34
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: modern5_withBlank_60
+      rect:
+        serializedVersion: 2
+        x: 12
+        y: 128
+        width: 24
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: modern5_withBlank_61
+      rect:
+        serializedVersion: 2
+        x: 58
+        y: 128
+        width: 24
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: modern5_withBlank_62
+      rect:
+        serializedVersion: 2
+        x: 104
+        y: 128
+        width: 24
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: modern5_withBlank_63
+      rect:
+        serializedVersion: 2
+        x: 148
+        y: 128
+        width: 24
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: modern5_withBlank_64
+      rect:
+        serializedVersion: 2
+        x: 194
+        y: 128
+        width: 24
+        height: 52
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: modern5_withBlank_65
+      rect:
+        serializedVersion: 2
+        x: 240
+        y: 128
+        width: 24
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: modern5_withBlank_66
+      rect:
+        serializedVersion: 2
+        x: 288
+        y: 128
+        width: 26
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: modern5_withBlank_67
+      rect:
+        serializedVersion: 2
+        x: 334
+        y: 128
+        width: 26
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: modern5_withBlank_68
+      rect:
+        serializedVersion: 2
+        x: 380
+        y: 128
+        width: 26
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: modern5_withBlank_69
+      rect:
+        serializedVersion: 2
+        x: 420
+        y: 128
+        width: 30
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: modern5_withBlank_70
+      rect:
+        serializedVersion: 2
+        x: 466
+        y: 128
+        width: 30
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: modern5_withBlank_71
+      rect:
+        serializedVersion: 2
+        x: 512
+        y: 128
+        width: 30
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: modern5_withBlank_72
+      rect:
+        serializedVersion: 2
+        x: 10
+        y: 64
+        width: 24
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: modern5_withBlank_73
+      rect:
+        serializedVersion: 2
+        x: 56
+        y: 64
+        width: 24
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: modern5_withBlank_74
+      rect:
+        serializedVersion: 2
+        x: 102
+        y: 64
+        width: 24
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: modern5_withBlank_75
+      rect:
+        serializedVersion: 2
+        x: 150
+        y: 64
+        width: 24
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: modern5_withBlank_76
+      rect:
+        serializedVersion: 2
+        x: 196
+        y: 64
+        width: 24
+        height: 52
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: modern5_withBlank_77
+      rect:
+        serializedVersion: 2
+        x: 242
+        y: 64
+        width: 24
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: modern5_withBlank_78
+      rect:
+        serializedVersion: 2
+        x: 284
+        y: 64
+        width: 26
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: modern5_withBlank_79
+      rect:
+        serializedVersion: 2
+        x: 330
+        y: 64
+        width: 26
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: modern5_withBlank_80
+      rect:
+        serializedVersion: 2
+        x: 376
+        y: 64
+        width: 26
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: modern5_withBlank_81
+      rect:
+        serializedVersion: 2
+        x: 424
+        y: 64
+        width: 30
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: modern5_withBlank_82
+      rect:
+        serializedVersion: 2
+        x: 470
+        y: 64
+        width: 30
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: modern5_withBlank_83
+      rect:
+        serializedVersion: 2
+        x: 516
+        y: 64
+        width: 30
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: modern5_withBlank_84
+      rect:
+        serializedVersion: 2
+        x: 8
+        y: 0
+        width: 30
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: modern5_withBlank_85
+      rect:
+        serializedVersion: 2
+        x: 54
+        y: 0
+        width: 30
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: modern5_withBlank_86
+      rect:
+        serializedVersion: 2
+        x: 100
+        y: 0
+        width: 30
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: modern5_withBlank_87
+      rect:
+        serializedVersion: 2
+        x: 146
+        y: 0
+        width: 30
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: modern5_withBlank_88
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 0
+        width: 30
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: modern5_withBlank_89
+      rect:
+        serializedVersion: 2
+        x: 238
+        y: 0
+        width: 30
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: modern5_withBlank_90
+      rect:
+        serializedVersion: 2
+        x: 284
+        y: 0
+        width: 30
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: modern5_withBlank_91
+      rect:
+        serializedVersion: 2
+        x: 330
+        y: 0
+        width: 30
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: modern5_withBlank_92
+      rect:
+        serializedVersion: 2
+        x: 376
+        y: 0
+        width: 30
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: modern5_withBlank_93
+      rect:
+        serializedVersion: 2
+        x: 422
+        y: 0
+        width: 34
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: modern5_withBlank_94
+      rect:
+        serializedVersion: 2
+        x: 468
+        y: 0
+        width: 34
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: modern5_withBlank_95
+      rect:
+        serializedVersion: 2
+        x: 514
+        y: 0
+        width: 34
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+  spritePackingTag: 
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

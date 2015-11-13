@@ -14,24 +14,22 @@ public class PlayerController : MonoBehaviour
 	public Material hurtMat;
 	public Material deadMat;
 
-	//Kevin added 08/04
 	public GameObject gameController;
 	private GameController controllerScript;
 
-	//Kevin added 08/18
 	private bool movingUp = false;
 	private bool movingDown = false;
 	private bool justHit = false;
 	private Vector3 movePos;
-	private float knockBackSpeed = 15;
-	private bool fallingBack = false;
+	private float translateSpeed = 5;
+	private bool moving = false;
 
 	public GameObject scoreText;
 	private ks_code_score scoreScript;
 
 	public AudioClip bump;
 
-	bool hurt;
+    bool hurt = false;
 	float hurtTime;
 	int currentLane;
 	bool laneSwitched;
@@ -45,78 +43,161 @@ public class PlayerController : MonoBehaviour
 	private bool alive = false;
 	private Animator animator;
 
+    private bool invincible = true;
+
+    private int direction = -1;
+
+    //For selecting a character
+    private bool going = false;
+    private MenuAnimations menuScript;
+
 	void Awake()
 	{
+        //For character selection
+        if (Application.loadedLevelName == "MainMenu_movement 1")
+            menuScript = Camera.main.GetComponent<MenuAnimations>();
 		scoreScript = scoreText.GetComponent<ks_code_score>();
 		portraitSprite = portraitObject.GetComponent<Image> ();
-		hurt = false;
-		//Kevin added 08/04
 		controllerScript = gameController.GetComponent<GameController>();
-		//Make it start not alive.
-		Vector3 initPos = new Vector3(100, 10, 0);
-		this.transform.position = initPos;
-		
-		standard = this.GetComponent<SpriteRenderer> ().material;
+        PositionOffScreen();
+        standard = this.GetComponent<SpriteRenderer> ().material;
 		currentLane = startingLane;
 		animator = (Animator)this.GetComponent<Animator> ();
-		//		portraitSprite = portraitObject.GetComponent<Image> ();
-		
 		setupSprite ();
 	}
+
+    void PositionOffScreen()
+    {
+        Vector3 initPos = new Vector3(100, 10, 0);
+        this.transform.position = initPos;
+    }
+
 	void OnMouseDown ()
 	{
-		mousePos = Input.mousePosition;
+        if (Application.loadedLevelName == "MainMenu_movement 1")
+        {
+            if(!going)
+            {
+                StartCoroutine(MenuJump());
+                going = true;
+            }
+        }
+
+        mousePos = Input.mousePosition;
 		clicked = true;
 		dragTime = 0;
 	}
 
-	//Make getting hit not teleport
+    private IEnumerator MenuJump()
+    {
+        Vector3 initialTrans = this.gameObject.transform.position;
+        float yChange = this.transform.position.y;
+        while(this.transform.position.y <= initialTrans.y + 0.4)
+        {
+            yChange += 10 * Time.deltaTime;
+            this.transform.position = new Vector3(this.transform.position.x, yChange, this.transform.position.z);
+            yield return null;
+        }
+        yield return new WaitForSeconds(0.01f);
+        while (this.transform.position.y >= initialTrans.y)
+        {
+            yChange -= 10 * Time.deltaTime;
+            this.transform.position = new Vector3(this.transform.position.x, yChange, this.transform.position.z);
+            yield return null;
+        }
+        SendChosen();
+    }
+
+    private void SendChosen()
+    {
+        menuScript.CharacterChosen(this.gameObject.name);
+    }
+
+	//Translate to a new position. Used for getting hit, or running in.
 	void moveToPos()
 	{
-		if(this.transform.position.x > movePos.x)
-		{
-			transform.Translate(Vector3.right * -knockBackSpeed * Time.deltaTime);
-		}
-		else{
-			fallingBack = false;
-		}
+        if(moving)
+        {
+            //Moves left
+            if (direction == 0 && !invincible)
+            {
+                if (this.transform.position.x > movePos.x)
+                {
+                    //Moving left is hit by obstacle, or player. Should be faster than standard speed.
+                    transform.Translate(Vector3.left * (translateSpeed + 10) * Time.deltaTime);
+                }
+                else
+                {
+                    moving = false;
+                }
+            }
+            //Moves right
+            else if (direction == 1)
+            {
+                if (this.transform.position.x < movePos.x)
+                {
+                    transform.Translate(Vector3.right * translateSpeed * Time.deltaTime);
+                }
+                else
+                {
+                    moving = false;
+                    //Only needs to be set false once.
+                    if (this.name == "Character001")
+                        scoreScript.StartIncreasingScore();
+                    invincible = false;
+                }
+            }
+        }
+        
 	}
 
-	public void setMovePos(Vector3 position)
+    public void HitObstacle(float distance)
+    {
+        if(!invincible)
+        {
+            setMovePos(new Vector3(this.transform.position.x + distance, this.transform.position.y, this.transform.position.z));
+            setHurt();
+        }
+            
+    }
+
+	private void setMovePos(Vector3 position)
 	{
-		if(!fallingBack)
+        movePos = position;
+
+        //Determine if point is ahead of or behind current point.
+        if (this.transform.position.x > movePos.x)
+            direction = 0;
+        else
+            direction = 1;
+
+        if (!moving)
 		{
-			fallingBack = true;
-			movePos = position;
+			moving = true;
 		}
 	}
 
-	public void setHurt ()
+	private void setHurt ()
 	{
 		hurt = true;
-//		Vector3 checkPosition = Camera.main.WorldToViewportPoint (this.transform.position);
-//		if (checkPosition.x < .01) {
-//			this.alive = false;
-//			this.transform.position = new Vector3(100, 0, 0);
-//			setMaterials (deadMat);
-//			//GameController function
-//			controllerScript.PlayerDied();
-//		}
-//		else{
-			setMaterials(hurtMat);
-//		}
+		setMaterials(hurtMat);
 	}
 
-	private void CheckDead(){
-		Vector3 checkPosition = Camera.main.WorldToViewportPoint (this.transform.position);
-		if (checkPosition.x < .01) {
-			this.alive = false;
-			this.transform.position = new Vector3(100, 0, 0);
-			setMaterials (deadMat);
-			scoreScript.PlayerDeath();
-			//GameController function
-			controllerScript.PlayerDied();
-		}
+	private void CheckDead()
+    {
+        if(!invincible)
+        {
+            Vector3 checkPosition = Camera.main.WorldToViewportPoint(this.transform.position);
+            if (checkPosition.x < .01)
+            {
+                this.alive = false;
+                this.transform.position = new Vector3(100, 0, 0);
+                setMaterials(deadMat);
+                scoreScript.PlayerDeath();
+                //GameController function
+                controllerScript.PlayerDeath();
+            }
+        }
 	}
 
 	// Update is called once per frame
@@ -146,7 +227,7 @@ public class PlayerController : MonoBehaviour
 				else if (animator.GetCurrentAnimatorStateInfo (0).IsName ("player-idle")) {
 					jumping = false;
 					// Snap to lane when jump is finished in case of weird jump behavior
-					snapToLane ();
+					//snapToLane ();
 				}
 				if (animator.GetCurrentAnimatorStateInfo (0).IsName ("player-idle")) {
 					jumping = false;
@@ -240,42 +321,52 @@ public class PlayerController : MonoBehaviour
 
 	void OnTriggerEnter2D(Collider2D other)
 	{
-		if(other.gameObject.tag == "Player" && !justHit && alive)
-		{
-			if(movingUp)
-			{
-				moveDown();
-			}
-			else if(movingDown)
-			{
-				moveUp();
-			}
-			else 
-			{
-				setHurt();
-				Vector3 newPos = new Vector3(this.transform.position.x - 1.5f, this.transform.position.y, this.transform.position.z);
-				setMovePos(newPos);
-			}
-			justHit = true;
-			StartCoroutine(WaitAndNotHurt());
-		}
+        if(!invincible)
+        {
+            if (other.gameObject.tag == "Player" && !justHit && alive)
+            {
+                if (movingUp)
+                {
+                    moveDown();
+                }
+                else if (movingDown)
+                {
+                    moveUp();
+                }
+                else
+                {
+                    //Only hit the player behind the first.
+                    if(other.gameObject.transform.position.x > this.transform.position.x)
+                    {
+                        setHurt();
+                        Vector3 newPos = new Vector3(this.transform.position.x - 1.8f, this.transform.position.y, this.transform.position.z);
+                        setMovePos(newPos);
+                    }
+                }
+                justHit = true;
+                StartCoroutine(WaitAndNotHurt());
+            }
+        }
 	}
 
 	void OnTriggerStay2D(Collider2D other)
 	{
-		if(other.gameObject.tag == "Player" && !justHit && alive)
-		{
-			setHurt();
-			Vector3 newPos = new Vector3(this.transform.position.x - 1.5f, this.transform.position.y, this.transform.position.z);
-			setMovePos(newPos);
-			justHit = true;
-			StartCoroutine(WaitAndNotHurt());
-		}
+        if(!invincible)
+        {
+            if (other.gameObject.tag == "Player" && !justHit && alive)
+            {
+                setHurt();
+                Vector3 newPos = new Vector3(this.transform.position.x - 1.8f, this.transform.position.y, this.transform.position.z);
+                setMovePos(newPos);
+                justHit = true;
+                StartCoroutine(WaitAndNotHurt());
+            }
+        }
 	}
 
 	IEnumerator WaitAndNotHurt()
 	{
-		yield return new WaitForSeconds(0.3f);
+		yield return new WaitForSeconds(0.4f);
 		justHit = false;
 	}
 
@@ -285,15 +376,25 @@ public class PlayerController : MonoBehaviour
 	}
 
 	//Kevin Added 08/04
-	public void SpawnPlayer(float xPos)
+    public void Spawn()
+    {
+
+    }
+
+    //This will set the first player's art assets to the proper
+    //character that they picked from the menu.
+    public void Spawn(bool firstChar, float xPos)
+    {
+
+    }
+
+	public void Spawn(float xPos)
 	{
 		scoreScript.PlayerCreated();
-		//xPos increases as spawns go on, so they spawn colliding with each other. Also challenge.
 		alive = true;
 		snapToLane();
-		movePos = this.transform.position;
-		//Should not be hard coded.
-		this.transform.position = new Vector3(xPos, this.transform.position.y, this.transform.position.z);
+        this.transform.position = new Vector3(-4, this.transform.position.y, this.transform.position.z);
+		setMovePos(new Vector3(xPos, this.transform.position.y, this.transform.position.z));
 		portraitSprite.sprite = characterPortrait;
 
 		setMaterials(standard);
